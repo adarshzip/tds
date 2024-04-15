@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Source_Sans_3 } from "next/font/google";
-import Caslon from 'next/font/local'
+import { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/elements/Header";
 
 // Fonts (USC Brand Guidelines)
-const inter = Inter({ subsets: ["latin"] });
-
+import { Source_Sans_3 } from "next/font/google";
+import Caslon from 'next/font/local'
 const source_sans = Source_Sans_3({
   weight: ['400', '300', '200', '500', '600', '700'],
   style: ['normal', 'italic'],
@@ -21,10 +19,19 @@ const caslon = Caslon({
   variable: '--font-caslon'
 })
 
-export const metadata: Metadata = {
-  title: "USC Debate",
-  description: "Please fill this out",
-};
+// FontAwesome Icons
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
+
+export const metadata = {
+  title: {
+    template: '%s | USC Debate',
+    default: "USC Debate",
+  },
+  icon: '/favicon.ico'
+}
 
 export default function RootLayout({
   children,
@@ -33,7 +40,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={source_sans.className}>{children}</body>
+      <body className={source_sans.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

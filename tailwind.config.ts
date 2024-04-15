@@ -1,3 +1,4 @@
+import { Source_Sans_3 } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,16 +10,20 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'campus1': "url('/static/images/Campus1.jpg')",
       },
       fontFamily: {
-        sans: ['var(--font-source-sans)'],
-        serif: ['var(--font-caslon)'],
-      }
+        Caslon: ['Caslon'],
+        Source_Sans_3: ['Source Sans 3'],
+      },
+      colors: {
+        'usc-red': '#990000',
+        'usc-yellow': '#FFCC00',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-fontawesome'),
+  ],
 };
 export default config;
