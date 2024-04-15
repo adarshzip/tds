@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import React from 'react';
-import { render } from 'react-dom';
 //icons
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

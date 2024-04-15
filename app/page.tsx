@@ -22,12 +22,12 @@ export default function Home() {
         <div className="bg-white py-5 px-6 flex flex-col lg:basis-3/4 gap-6 xl:pl-20 lg:pt-10">
           <div className="flex flex-col">
             <h2 className="text-usc-red font-Caslon text-2xl">About the Team</h2>
-            <p className="text-black lg:w-2/3">The Trojan Debate Squad (TDS), USC's first chartered student organization, is devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation's leading collegiate debate programs and focuses on competitive policy debate and expanding debate in Los Angeles public schools.</p>
+            <p className="text-black lg:w-2/3">The Trojan Debate Squad (TDS), USC&apos;s first chartered student organization, is devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation&apos;s leading collegiate debate programs and focuses on competitive policy debate and expanding debate in Los Angeles public schools.</p>
             <p className="text-black"><a href="/about" className="text-usc-red underline">Learn More</a>.</p>
           </div>
           <div className="flex flex-col basis-1/2">
             <h2 className="text-usc-red font-Caslon text-2xl">Join Us</h2>
-            <p className="text-black lg:w-2/3">Whether you're an incoming student, current trojan, or even an interested high schooler, we're always excited to have new members on the team.</p>
+            <p className="text-black lg:w-2/3">Whether you&apos;re an incoming student, current trojan, or even an interested high schooler, we&apos;re always excited to have new members on the team.</p>
             <p className="text-black"><a href="/prospects" className="text-usc-red underline">Learn More</a>.</p>
           </div>
           <div className="flex flex-col basis-1/2">
