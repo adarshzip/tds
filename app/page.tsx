@@ -11,15 +11,15 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="bg-white">
-      <div className="bg-no-repeat bg-cover bg-center bg-fixed bg-campus1">
-        <p className="pt-[400px] sm:pt-[650px]"></p>
-        <div className="flex pb-4 pl-4">
-          <h2 className="text-white font-Caslon text-3xl bg-usc-red rounded-md pl-1 sm:px-1" >Join the <em className="text-usc-yellow"> Trojan Debate Squad</em> in celebrating <em className="text-usc-yellow">144 years</em> of success.</h2>
+      <div className="bg-no-repeat bg-cover bg-center bg-fixed bg-campus1 flex h-screen">
+        <div className="flex pt-11 pl-8 flex-col">
+          <h2 className="text-white font-semibold text-3xl rounded-md sm:px-1" >144 years of success.</h2>
+          <h2 className="text-white font-semibold text-3xl rounded-md sm:px-1 bg-usc-red" >Join the <b className="text-usc-yellow">Trojan Debate Squad</b>.</h2>
         </div>
       </div>
 
-      <div className="flex flex-row justify-between">
-        <div className="bg-white py-5 px-6 flex flex-col lg:basis-3/4 gap-6 xl:pl-20 lg:pt-10">
+      <div className="flex">
+        <div className="bg-white py-5 px-6 flex flex-col lg:basis-3/4 gap-6 xl:pl-20 lg:py-10">
           <div className="flex flex-col">
             <h2 className="text-usc-red font-Caslon text-2xl">About the Team</h2>
             <p className="text-black lg:w-2/3">The Trojan Debate Squad (TDS), USC&apos;s first chartered student organization, is devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation&apos;s leading collegiate debate programs and focuses on competitive policy debate and expanding debate in Los Angeles public schools.</p>
@@ -44,7 +44,6 @@ export default function Home() {
             <p className="text-black lg:w-2/3">Any questions not already covered? Feel free to <a href="/contact" className="text-usc-red underline">reach out</a>.</p>
           </div>
         </div>
-        <Image src={placeholder} alt="placeholder image" className="hidden lg:flex pr-32 w-1/3 rounded-lg py-10" />
       </div>
     </main>
   );

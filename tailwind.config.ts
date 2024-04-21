@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'campus1': "url('/static/images/Campus1.jpg')",
+        'campus1': "url('/static/images/Campus1111.png')",
       },
       fontFamily: {
         Caslon: ['Caslon'],
