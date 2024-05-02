@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import Header from "@/components/elements/Header";
+import Footer from "@/components/elements/Footer";
 
 // Fonts (USC Brand Guidelines)
 import { Source_Sans_3 } from "next/font/google";
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Analytics />
+        <Footer />  
       </body>
     </html>
   );
