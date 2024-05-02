@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 //Images
 import Image from "next/image";
-import placeholder from "../public/static/images/ant.jpg"
+import teamImg from '../public/static/images/Team.jpg';
 
 export const metadata = {
   title: 'Home | USC Debate',
@@ -17,8 +17,7 @@ export default function Home() {
           <h2 className="text-white font-semibold text-3xl rounded-md sm:px-1 bg-usc-red" >Join the <b className="text-usc-yellow">Trojan Debate Squad</b>.</h2>
         </div>
       </div>
-
-      <div className="flex">
+      <div className="flex items-center">
         <div className="bg-white py-5 px-6 flex flex-col lg:basis-3/4 gap-6 xl:pl-20 lg:py-10">
           <div className="flex flex-col">
             <h2 className="text-usc-red font-Caslon text-2xl">About the Team</h2>
@@ -44,6 +43,15 @@ export default function Home() {
             <p className="text-black lg:w-2/3">Any questions not already covered? Feel free to <a href="/contact" className="text-usc-red underline">reach out</a>.</p>
           </div>
         </div>
+        <Image
+          src={teamImg}
+          alt = "Image of a few members of the USC Debate Team standing in a parking lot, smiling."
+          style={{
+            maxHeight: '500px',
+            height: 'auto',
+            width: 'auto',
+          }}
+        />
       </div>
     </main>
   );

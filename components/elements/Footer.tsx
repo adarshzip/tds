@@ -8,9 +8,8 @@ export default function Header() {
                 <a className="flex pr-6 text-3xl text-white" href='/'>
                 Debate
                 </a>
-                <a href="/sitemap">Sitemap</a>
             </div>
-            
+            <a href="/sitemap" className="pr-6 hover:text-usc-yellow text-lg">Sitemap</a>
         </footer>
     )
 }
