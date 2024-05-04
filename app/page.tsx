@@ -19,27 +19,24 @@ export default function Home() {
       </div>
       <div className="bg-white py-5 px-6 flex flex-col gap-6 mx-auto max-w-6xl">
         <div className="flex flex-col">
-          <h2 className="text-usc-red font-Caslon text-2xl">About the Team</h2>
+          <a href="/about" className="text-usc-red font-Caslon text-2xl">About the Team</a>
           <p className="text-black">The Trojan Debate Squad (TDS), USC&apos;s first chartered student organization, is devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation&apos;s leading collegiate debate programs and focuses on competitive policy debate and expanding debate in Los Angeles public schools.</p>
-          <p className="text-black"><a href="/about" className="text-usc-red underline">Learn More</a>.</p>
         </div>
         <div className="flex flex-col">
-          <h2 className="text-usc-red font-Caslon text-2xl">Join Us</h2>
+          <a href='/prospects' className="text-usc-red font-Caslon text-2xl">Join Us</a>
           <p className="text-black">Whether you&apos;re an incoming student, current trojan, or even an interested high schooler, we&apos;re always excited to have new members on the team.</p>
-          <p className="text-black"><a href="/prospects" className="text-usc-red underline">Learn More</a>.</p>
         </div>
         <div className="flex flex-col">
-          <h2 className="text-usc-red font-Caslon text-2xl">Outreach</h2>
-          <p className="text-black"><a href="/outreach" className="text-usc-red underline">Learn more</a> about our efforts to expand access to debate throughout Los Angeles.</p>
+          <a href="/outreach" className="text-usc-red font-Caslon text-2xl">Outreach</a>
+          <p className="text-black">Learn about our efforts to expand access to debate throughout Los Angeles.</p>
         </div>
         <div className="flex flex-col">
-          <h2 className="text-usc-red font-Caslon text-2xl">Donate</h2>
+          <a href="/donate" className="text-usc-red font-Caslon text-2xl">Donate</a>
           <p className="text-black">We rely on the generous support of our donors and the USC Annenberg School of Communications to fund our competitive efforts.</p>
-          <p className="text-black"><a href="/donate" className="text-usc-red underline">Learn More</a>.</p>
         </div>
         <div className="flex flex-col">
-          <h2 className="text-usc-red font-Caslon text-2xl">Contact</h2>
-          <p className="text-black">Any questions not already covered? Feel free to <a href="/contact" className="text-usc-red underline">reach out</a>.</p>
+          <a href='/contact' className="text-usc-red font-Caslon text-2xl">Contact</a>
+          <p className="text-black">Any questions not already covered? Feel free to reach out.</p>
         </div>
       </div>
     </main>
