@@ -71,7 +71,7 @@ export const metadata: Metadata = {
                     <div className="flex flex-col gap-5">
                         <div className="flex flex-col">
                             <a href="/about/history" className="text-usc-red text-xl underline">Team History</a>
-                            <p>Learn about the history behind USC's oldest chartered student organization.</p>
+                            <p>Learn about the history behind USC&apos;s oldest chartered student organization.</p>
                         </div>
                         <div className="flex flex-col">
                             <a href="/about/NDThistory" className="text-usc-red text-xl underline">NDT History</a>
