@@ -1,4 +1,5 @@
 import { Source_Sans_3 } from "next/font/google";
+import { Petrona } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -14,8 +15,9 @@ const config: Config = {
         'newAnnenberg': "url('/static/images/newAnnenberg.jpg')",
       },
       fontFamily: {
-        Caslon: ['Caslon'],
-        Source_Sans_3: ['Source Sans 3'],
+        caslon: ['var(--font-caslon)'],
+        source_sans: ['var(--font-source_sans)'],
+        petrona: ['var(--font-petrona)'],
       },
       colors: {
         'usc-red': '#990000',

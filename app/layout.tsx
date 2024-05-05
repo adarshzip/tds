@@ -7,18 +7,22 @@ import Footer from "@/components/elements/Footer";
 // Fonts (USC Brand Guidelines)
 import { Source_Sans_3 } from "next/font/google";
 import Caslon from 'next/font/local'
+import { Petrona } from "next/font/google";
+
 const source_sans = Source_Sans_3({
-  weight: ['400', '300', '200', '500', '600', '700'],
-  style: ['normal', 'italic'],
   subsets: ['latin'],
-  display: 'swap',
   variable: '--font-source-sans',
 })
 
 const caslon = Caslon({
   src: 'fonts/adobe-caslon-pro.woff',
-  display: 'swap',
-  variable: '--font-caslon'
+  display: 'auto',
+  variable: '--font-caslon',
+})
+
+const petrona = Petrona({
+  subsets: ['latin'],
+  variable: '--font-petrona',
 })
 
 // FontAwesome Icons
@@ -41,8 +45,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={source_sans.className}>
+    <html lang="en" className={`${source_sans.variable} ${caslon.variable} ${petrona.variable}`}>
+      <body>
         <Header />
         {children}
         <Analytics />
