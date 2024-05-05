@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'campus1': "url('/static/images/Campus1111.png')",
+        'newAnnenberg': "url('/static/images/newAnnenberg.jpg')",
       },
       fontFamily: {
         Caslon: ['Caslon'],

@@ -16,7 +16,7 @@ export default function Header() {
             </div>
             <div className="flex items-center px-4 pb-4 font-light font-Source_Sans_3 basis-full justify-between">
                 <p className="font-thin font-sans text-xs">Copyright © 2024 University of Southern California Trojan Debate Squad</p>
-                <p className="hidden md:flex font-thin font-sans text-xs">Designed and built by <a href="https://adarsh.zip" className="pl-1 text-white hover:bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] hover:from-green-300 hover:via-emerald-400 hover:to-cyan-400 hover:text-transparent hover:bg-clip-text">Adarsh Agrawal</a>.</p>
+                <p className="hidden md:flex font-thin font-sans text-xs">Designed and built by&nbsp;<a href="https://adarsh.zip" className="text-white hover:bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] hover:from-green-300 hover:via-emerald-400 hover:to-cyan-400 hover:text-transparent hover:bg-clip-text">Adarsh Agrawal</a>.</p>
             </div>
         </footer>
     )

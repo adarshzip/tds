@@ -11,7 +11,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="bg-white">
-      <div className="bg-no-repeat bg-cover bg-center bg-fixed bg-campus1 flex h-screen">
+      <div className="bg-no-repeat bg-cover bg-center bg-fixed bg-campus1 flex h-[100vh]">
         <div className="flex pt-11 pl-8 flex-col">
           <h2 className="text-white font-semibold text-3xl rounded-md sm:px-1" >144 years of success.</h2>
           <h2 className="text-white font-semibold text-3xl rounded-md sm:px-1 bg-usc-red" >Join the <b className="text-usc-yellow">Trojan Debate Squad</b>.</h2>
