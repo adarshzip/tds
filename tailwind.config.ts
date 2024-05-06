@@ -27,6 +27,7 @@ const config: Config = {
   },
   plugins: [
     require('tailwind-fontawesome'),
+    require('daisyui'),
   ],
 };
 export default config;

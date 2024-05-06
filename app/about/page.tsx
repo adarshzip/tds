@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: 'About',
@@ -70,12 +71,16 @@ export const metadata: Metadata = {
                     <h1 className="text-usc-red text-3xl pb-2 text-center">Learn More</h1>
                     <div className="flex flex-col gap-5">
                         <div className="flex flex-col">
-                            <a href="/about/history" className="text-usc-red text-xl underline">Team History</a>
+                            <Link href="/about/history" className="text-usc-red text-xl underline">Team History</Link>
                             <p>Learn about the history behind USC&apos;s oldest chartered student organization.</p>
                         </div>
                         <div className="flex flex-col">
-                            <a href="/about/NDThistory" className="text-usc-red text-xl underline">NDT History</a>
+                            <Link href="/about/history/NDT" className="text-usc-red text-xl underline">NDT History</Link>
                             <p>Learn about how USC has historically performed at the National Debate Tournament (NDT).</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <Link href="/about/history/directors" className="text-usc-red text-xl underline">Past Directors</Link>
+                            <p>A listing of past directors of the USC TDS.</p>
                         </div>
                     </div>
                 </div>

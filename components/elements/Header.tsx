@@ -1,45 +1,46 @@
 //icons
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 export default function Header() {
     return(
         <header className='bg-usc-red flex items-center h-16 pl-4 font-light basis-full justify-between'>
             <nav className='flex justify-start flex-row items-center px-4 space-y-4 sm:space-y-0'>
-                <div className='font-caslon'>
-                    <a className='pr-0 text-3xl text-usc-yellow align-middle' href='/'>
+                <div className='font-caslon tracking-tighter tracking pt-1'>
+                    <Link className='pr-0 text-3xl text-usc-yellow align-middle' href='/'>
                         USC
-                    </a>
-                    <a className="pr-6 text-3xl text-white align-middle" href='/'>
-                    Debate
-                    </a>
+                    </Link>
+                    <Link className="pr-6 text-3xl text-white align-middle" href='/'>
+                        Debate
+                    </Link>
                 </div>
 
-                <a className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/about">
-                About
-                </a>
+                <Link href="/about" className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" >
+                    About
+                </Link>
 
-                <a className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/prospects">
+                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/prospects">
                     Prospects
-                </a>
+                </Link>
 
-                <a className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/outreach">
+                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/outreach">
                     Outreach
-                </a>
+                </Link>
 
-                <a className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/donate">
+                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/donate">
                     Donate
-                </a>
+                </Link>
                 
-                <a className="hidden text-lg text-white hover:text-usc-yellow sm:flex justify-self-end" href="/contact">
+                <Link className="hidden text-lg text-white hover:text-usc-yellow sm:flex justify-self-end" href="/contact">
                     Contact
-                </a>
+                </Link>
             </nav>
 
             <nav className="flex flex-row items-center justify-end pr-8 space-y-4 flex-nowrap sm:space-y-0">
-                <a className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="https://instagram.com/uscdebate"> 
+                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="https://instagram.com/uscdebate"> 
                     <FontAwesomeIcon icon={faInstagram} />
-                </a>
+                </Link>
             </nav>
         </header>
     )
