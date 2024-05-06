@@ -16,29 +16,29 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <Link href="/about" className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" >
+                <Link href="/about" className="hidden transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow sm:flex" >
                     About
                 </Link>
 
-                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/prospects">
+                <Link className="hidden transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/prospects">
                     Prospects
                 </Link>
 
-                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/outreach">
+                <Link className="hidden transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/outreach">
                     Outreach
                 </Link>
 
-                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/donate">
+                <Link className="hidden transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="/donate">
                     Donate
                 </Link>
                 
-                <Link className="hidden text-lg text-white hover:text-usc-yellow sm:flex justify-self-end" href="/contact">
+                <Link className="hidden transition duration-150 ease-in text-lg text-white hover:text-usc-yellow sm:flex justify-self-end" href="/contact">
                     Contact
                 </Link>
             </nav>
 
             <nav className="flex flex-row items-center justify-end pr-8 space-y-4 flex-nowrap sm:space-y-0">
-                <Link className="hidden pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="https://instagram.com/uscdebate"> 
+                <Link className="hidden transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow sm:flex" href="https://www.instagram.com/usctrojandebate/"> 
                     <FontAwesomeIcon icon={faInstagram} />
                 </Link>
             </nav>

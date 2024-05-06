@@ -13,7 +13,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="flex flex-row">
-                    <Link href="/sitemap" className="pr-6 hover:text-usc-yellow text-lg font-sans">Sitemap</Link>
+                    <Link href="/sitemap" className="pr-6 transition duration-150 ease-in hover:text-usc-yellow text-lg font-sans">Sitemap</Link>
                 </div>
             </div>
             <div className="flex items-center px-4 pb-4 font-light font-source_sans basis-full justify-between">
