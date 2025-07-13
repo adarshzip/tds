@@ -207,7 +207,7 @@ export default function PublicDebate() {
                 <div className="text-usc-red text-4xl font-bold mb-2">15+</div>
                 <h3 className="text-xl font-semibold mb-2">Partner Organizations</h3>
                 <p className="text-gray-600">
-                  Community groups and institutions we've collaborated with
+                  Community groups and institutions we&apos;ve collaborated with
                 </p>
               </div>
             </div>
@@ -237,7 +237,7 @@ export default function PublicDebate() {
                 <h3 className="text-usc-red text-xl font-semibold mb-4">Host an Event</h3>
                 <p className="text-gray-600 mb-4">
                   Interested in hosting a public debate or workshop for your 
-                  organization or community group? We'd love to collaborate.
+                  organization or community group? We&apos;d love to collaborate.
                 </p>
                 <div className="space-y-3">
                   <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">

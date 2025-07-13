@@ -31,7 +31,7 @@ export default function DigitalDebate() {
                 digital debate technology and accessibility.
               </p>
               <p className="text-lg mb-6">
-                Through our web-based debate system, we've expanded access to competitive 
+                Through our web-based debate system, we&apos;ve expanded access to competitive 
                 debate beyond geographical limitations, allowing students from around the 
                 globe to participate in high-quality debate competitions.
               </p>

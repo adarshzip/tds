@@ -36,7 +36,7 @@ export default function Donate() {
         <section className="text-center mb-16">
           <h2 className="text-4xl font-caslon text-usc-red mb-6">Why Support the Trojan Debate Squad?</h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
-            For over 140 years, the Trojan Debate Squad has been USC's first chartered student organization, 
+            For over 140 years, the Trojan Debate Squad has been USC&apos;s first chartered student organization, 
             representing excellence in policy debate and critical thinking. Your support ensures this legacy continues.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
@@ -133,7 +133,7 @@ export default function Donate() {
               <h3 className="text-2xl font-semibold mb-4">Matching Gifts</h3>
               <p className="mb-4">
                 Many employers offer matching gift programs that can double or triple your donation. 
-                Check with your company's HR department to see if they match charitable contributions.
+                Check with your company&apos;s HR department to see if they match charitable contributions.
               </p>
               <p className="text-sm opacity-90">
                 USC Trojan Debate Squad is a registered 501(c)(3) organization, 
@@ -159,7 +159,7 @@ export default function Donate() {
         <section className="text-center">
           <h2 className="text-4xl font-caslon text-usc-red mb-6">Questions About Giving?</h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            We're here to help you make the most of your support. Contact us to discuss 
+            We&apos;re here to help you make the most of your support. Contact us to discuss 
             donation options, matching gifts, or any questions you may have.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

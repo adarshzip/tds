@@ -423,7 +423,7 @@ export default function Resources() {
         <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg text-center">
           <h2 className="text-3xl font-caslon mb-4">Need Help?</h2>
           <p className="text-xl mb-6">
-            Can't find what you're looking for? Contact us for assistance with resources or access.
+            Can&apos;t find what you&apos;re looking for? Contact us for assistance with resources or access.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 

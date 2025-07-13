@@ -132,18 +132,18 @@ export default function Outreach() {
             <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-usc-red mb-4">Maria's Journey</h3>
               <p className="text-gray-700 mb-4 italic">
-                "Through USC's debate mentorship program, I discovered my passion for 
-                public speaking and critical thinking. Now I'm studying political science 
-                at UCLA and hope to attend law school."
+                &quot;Through USC&apos;s debate mentorship program, I discovered my passion for 
+                public speaking and critical thinking. Now I&apos;m studying political science 
+                at UCLA and hope to attend law school.&quot;
               </p>
               <p className="text-sm text-gray-600">- Maria Rodriguez, Former High School Mentee</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-usc-red mb-4">Lincoln High School</h3>
               <p className="text-gray-700 mb-4 italic">
-                "USC's partnership has transformed our debate program. Our students have 
+                &quot;USC&apos;s partnership has transformed our debate program. Our students have 
                 gained confidence, improved their academic performance, and developed 
-                skills that will serve them throughout their lives."
+                skills that will serve them throughout their lives.&quot;
               </p>
               <p className="text-sm text-gray-600">- Dr. Sarah Johnson, Lincoln High School Principal</p>
             </div>
@@ -158,7 +158,7 @@ export default function Outreach() {
                               <h3 className="text-2xl font-semibold mb-4">For Schools &amp; Organizations</h3>
               <p className="mb-6">
                 Interested in bringing debate to your school or organization? 
-                We're always looking for new partners to expand our reach.
+                We&apos;re always looking for new partners to expand our reach.
               </p>
               <ul className="space-y-2 mb-6">
                 <li>• Customized program development</li>

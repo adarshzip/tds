@@ -16,8 +16,8 @@ export default function Prospects() {
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-caslon mb-6">Join the Trojan Debate Squad</h1>
           <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto">
-            Whether you're an incoming student, current Trojan, or interested high schooler, 
-            we're always excited to welcome new members to our championship-winning team.
+                    Whether you&apos;re an incoming student, current Trojan, or interested high schooler,
+        we&apos;re always excited to welcome new members to our championship-winning team.
           </p>
         </div>
       </div>
@@ -255,7 +255,7 @@ export default function Prospects() {
         <div className="mt-16 text-center bg-gradient-to-r from-usc-red to-red-800 text-white py-12 px-6 rounded-lg">
           <h2 className="text-3xl font-caslon mb-4">Ready to Join?</h2>
           <p className="text-xl mb-6 max-w-2xl mx-auto">
-            Don't wait to start your debate journey. Contact us today to learn more about joining the Trojan Debate Squad.
+            Don&apos;t wait to start your debate journey. Contact us today to learn more about joining the Trojan Debate Squad.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 

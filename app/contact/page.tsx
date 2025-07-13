@@ -17,7 +17,7 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-caslon mb-6">Contact Us</h1>
           <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto">
-            Get in touch with the Trojan Debate Squad. We're here to answer your questions 
+            Get in touch with the Trojan Debate Squad. We&apos;re here to answer your questions 
             and help you get involved.
           </p>
         </div>
@@ -38,70 +38,76 @@ export default function Contact() {
           <div className="space-y-8">
             <section>
               <h2 className="text-3xl font-caslon text-usc-red mb-6">Get in Touch</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-6">
                 {/* Contact Info */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <FontAwesomeIcon icon={faEnvelope} className="text-usc-red text-lg" />
-                    <div>
-                      <h3 className="font-semibold">Email</h3>
-                      <a href="mailto:debate@usc.edu" className="text-usc-red hover:underline">debate@usc.edu</a>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <FontAwesomeIcon icon={faEnvelope} className="text-usc-red text-lg" />
+                      <div>
+                        <h3 className="font-semibold">Email</h3>
+                        <a href="mailto:debate@usc.edu" className="text-usc-red hover:underline">debate@usc.edu</a>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center gap-3">
+                      <FontAwesomeIcon icon={faPhone} className="text-usc-red text-lg" />
+                      <div>
+                        <h3 className="font-semibold">Phone</h3>
+                        <a href="tel:+1-213-740-0900" className="text-usc-red hover:underline">(213) 740-0900</a>
+                      </div>
                     </div>
                   </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <FontAwesomeIcon icon={faPhone} className="text-usc-red text-lg" />
-                    <div>
-                      <h3 className="font-semibold">Phone</h3>
-                      <a href="tel:+1-213-740-0900" className="text-usc-red hover:underline">(213) 740-0900</a>
+
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className="text-usc-red text-lg mt-1" />
+                      <div>
+                        <h3 className="font-semibold">Office</h3>
+                        <p className="text-sm text-gray-700">ASC 200, Annenberg School</p>
+                        <p className="text-sm text-gray-700">3502 Watt Way, Los Angeles, CA 90089</p>
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className="text-usc-red text-lg mt-1" />
-                    <div>
-                      <h3 className="font-semibold">Office</h3>
-                      <p className="text-sm text-gray-700">ASC 200, Annenberg School</p>
-                      <p className="text-sm text-gray-700">3502 Watt Way, Los Angeles, CA 90089</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <FontAwesomeIcon icon={faClock} className="text-usc-red text-lg" />
-                    <div>
-                      <h3 className="font-semibold">Hours</h3>
-                      <p className="text-sm text-gray-700">Mon-Fri: 9AM-5PM, Sat: 10AM-2PM</p>
+                    
+                    <div className="flex items-center gap-3">
+                      <FontAwesomeIcon icon={faClock} className="text-usc-red text-lg" />
+                      <div>
+                        <h3 className="font-semibold">Hours</h3>
+                        <p className="text-sm text-gray-700">Mon-Fri: 9AM-5PM, Sat: 10AM-2PM</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Social Media */}
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-gray-800">Follow Us</h3>
-                  <div className="flex gap-3">
-                    <a 
-                      href="https://www.instagram.com/usctrojandebate/" 
-                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-3 rounded-lg hover:shadow-lg transition-shadow"
-                      aria-label="Follow us on Instagram"
-                    >
-                      <FontAwesomeIcon icon={faInstagramBrand} className="text-xl" />
-                    </a>
-                    <a 
-                      href="https://twitter.com/usctrojandebate" 
-                      className="bg-blue-500 text-white p-3 rounded-lg hover:shadow-lg transition-shadow"
-                      aria-label="Follow us on Twitter"
-                    >
-                      <FontAwesomeIcon icon={faTwitterBrand} className="text-xl" />
-                    </a>
-                    <a 
-                      href="https://www.linkedin.com/company/usc-trojan-debate-squad" 
-                      className="bg-blue-700 text-white p-3 rounded-lg hover:shadow-lg transition-shadow"
-                      aria-label="Follow us on LinkedIn"
-                    >
-                      <FontAwesomeIcon icon={faLinkedinBrand} className="text-xl" />
-                    </a>
+                {/* Social Media - Now as a separate, more prominent section */}
+                <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-lg border border-gray-200">
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold text-usc-red mb-3">Follow Us on Social Media</h3>
+                    <p className="text-gray-600 mb-4">Stay connected for updates, tournament results, and team news</p>
+                    <div className="flex justify-center gap-4">
+                      <a 
+                        href="https://www.instagram.com/usctrojandebate/" 
+                        className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
+                        aria-label="Follow us on Instagram"
+                      >
+                        <FontAwesomeIcon icon={faInstagramBrand} className="text-2xl" />
+                      </a>
+                      <a 
+                        href="https://twitter.com/usctrojandebate" 
+                        className="bg-blue-500 text-white p-4 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
+                        aria-label="Follow us on Twitter"
+                      >
+                        <FontAwesomeIcon icon={faTwitterBrand} className="text-2xl" />
+                      </a>
+                      <a 
+                        href="https://www.linkedin.com/company/usc-trojan-debate-squad" 
+                        className="bg-blue-700 text-white p-4 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
+                        aria-label="Follow us on LinkedIn"
+                      >
+                        <FontAwesomeIcon icon={faLinkedinBrand} className="text-2xl" />
+                      </a>
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-600">For updates, tournament results, and team news</p>
                 </div>
               </div>
             </section>

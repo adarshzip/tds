@@ -77,9 +77,9 @@ export default function Home() {
                 About the Team
               </Link>
               <p className="text-black mb-4">
-                The Trojan Debate Squad (TDS), USC's first chartered student organization, is devoted to teaching 
+                The Trojan Debate Squad (TDS), USC&apos;s first chartered student organization, is devoted to teaching 
                 argumentation and analytic thinking skills to students through academic debate. The TDS is one of 
-                the nation's leading collegiate debate programs.
+                                  the nation&apos;s leading collegiate debate programs.
               </p>
               <Link href="/about" className="text-usc-red hover:underline flex items-center gap-2">
                 Learn More <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
@@ -94,8 +94,8 @@ export default function Home() {
                 Join Us
               </Link>
               <p className="text-black mb-4">
-                Whether you're an incoming student, current Trojan, or even an interested high schooler, 
-                we're always excited to have new members on the team. No experience required!
+                        Whether you&apos;re an incoming student, current Trojan, or even an interested high schooler,
+        we&apos;re always excited to have new members on the team. No experience required!
               </p>
               <Link href="/prospects" className="text-usc-red hover:underline flex items-center gap-2">
                 Get Started <FontAwesomeIcon icon={faArrowRight} className="text-sm" />

@@ -200,7 +200,7 @@ export default function TeamMembers() {
                   <h3 className="text-2xl font-semibold mb-2">[Team Captain Name]</h3>
                   <p className="text-usc-yellow font-medium mb-3">Team Captain</p>
                   <p className="text-white opacity-90 mb-4">
-                    [Description of captain's role, leadership style, and vision for the team]
+                    [Description of captain&apos;s role, leadership style, and vision for the team]
                   </p>
                   <div className="flex items-center gap-2 text-sm">
                     <FontAwesomeIcon icon={faEnvelope} className="text-usc-yellow" />
@@ -224,7 +224,7 @@ export default function TeamMembers() {
                   <h3 className="text-2xl font-semibold mb-2">[Vice Captain Name]</h3>
                   <p className="text-usc-yellow font-medium mb-3">Vice Captain</p>
                   <p className="text-white opacity-90 mb-4">
-                    [Description of vice captain's role, responsibilities, and contributions]
+                    [Description of vice captain&apos;s role, responsibilities, and contributions]
                   </p>
                   <div className="flex items-center gap-2 text-sm">
                     <FontAwesomeIcon icon={faEnvelope} className="text-usc-yellow" />

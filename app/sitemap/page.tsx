@@ -57,40 +57,34 @@ export default function Sitemap() {
             </div>
           </section>
 
-          {/* About Section */}
+          {/* Additional Pages */}
           <section>
-            <h2 className="text-2xl font-caslon text-usc-red mb-6">About Section</h2>
+            <h2 className="text-2xl font-caslon text-usc-red mb-6">Additional Pages</h2>
             <div className="space-y-3">
-              <Link href="/about" className="block text-usc-red hover:underline">
-                About the Team
+              <Link href="/high-school" className="block text-usc-red hover:underline">
+                High School Programs
               </Link>
-              <Link href="/about/history" className="block text-usc-red hover:underline">
-                Team History
+              <Link href="/digital-debate" className="block text-usc-red hover:underline">
+                Digital Debate
               </Link>
-              <Link href="/about/history/NDT" className="block text-usc-red hover:underline">
-                NDT History
+              <Link href="/public-debate" className="block text-usc-red hover:underline">
+                Public Debate
               </Link>
-              <Link href="/about/history/directors" className="block text-usc-red hover:underline">
-                Past Directors
+              <Link href="/resources" className="block text-usc-red hover:underline">
+                Resources
               </Link>
             </div>
           </section>
 
-          {/* Information */}
+          {/* Team Information */}
           <section>
-            <h2 className="text-2xl font-caslon text-usc-red mb-6">Information</h2>
+            <h2 className="text-2xl font-caslon text-usc-red mb-6">Team Information</h2>
             <div className="space-y-3">
-              <Link href="/prospects" className="block text-usc-red hover:underline">
-                How to Join
+              <Link href="/about/team" className="block text-usc-red hover:underline">
+                Current Team Members
               </Link>
-              <Link href="/outreach" className="block text-usc-red hover:underline">
-                Outreach Programs
-              </Link>
-              <Link href="/donate" className="block text-usc-red hover:underline">
-                Donation Options
-              </Link>
-              <Link href="/contact" className="block text-usc-red hover:underline">
-                Contact Information
+              <Link href="/sitemap" className="block text-usc-red hover:underline">
+                Sitemap
               </Link>
             </div>
           </section>

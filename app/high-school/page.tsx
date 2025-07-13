@@ -51,7 +51,7 @@ export default function HighSchoolPrograms() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-usc-yellow mr-2">•</span>
-                      Access to USC's debate resources and facilities
+                      Access to USC&apos;s debate resources and facilities
                     </li>
                     <li className="flex items-start">
                       <span className="text-usc-yellow mr-2">•</span>

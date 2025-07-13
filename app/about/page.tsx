@@ -136,7 +136,7 @@ export const metadata: Metadata = {
                                     <h3 className="text-usc-red text-xl mb-3">Joshua Michael</h3>
                                     <p className="text-gray-700 leading-relaxed">
                                         [Bio placeholder] Joshua Michael brings extensive experience in policy debate coaching and 
-                                        has been instrumental in developing the team's strategic approach. Add detailed bio information 
+                                        has been instrumental in developing the team&apos;s strategic approach. Add detailed bio information 
                                         here including background, achievements, and coaching philosophy.
                                     </p>
                                 </div>
