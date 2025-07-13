@@ -98,12 +98,12 @@ export default function PublicDebate() {
                 <h3 className="text-usc-red text-xl font-semibold mb-4">Community Forums</h3>
                 <p className="text-gray-600 mb-4">
                   Interactive discussions on local and national issues, featuring 
-                  expert panelists, community leaders, and audience Q&A sessions.
+                  expert panelists, community leaders, and audience Q&amp;A sessions.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-usc-red text-white px-3 py-1 rounded-full text-sm">Panel Discussion</span>
                   <span className="bg-usc-yellow text-black px-3 py-1 rounded-full text-sm">Expert Speakers</span>
-                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Q&A Format</span>
+                                      <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Q&amp;A Format</span>
                 </div>
                 <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center min-h-[100px] flex flex-col justify-center">
                   <p className="text-sm text-gray-500">Community forum topics and speakers</p>

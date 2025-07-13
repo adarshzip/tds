@@ -177,7 +177,7 @@ export default function HighSchoolPrograms() {
               </div>
 
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h3 className="text-usc-red text-xl font-semibold mb-4">Registration & Contact</h3>
+                <h3 className="text-usc-red text-xl font-semibold mb-4">Registration &amp; Contact</h3>
                 <p className="text-gray-600 mb-4">
                   For more information about our high school programs, including 
                   registration details and scholarship opportunities, please contact us.

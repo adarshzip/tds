@@ -70,12 +70,7 @@ export default function Prospects() {
                     Prospective students can learn about the team and prepare to join once they arrive on campus.
                   </p>
                 </div>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-usc-red mb-2">High School Students</h3>
-                  <p className="text-gray-700">
-                    We welcome high school students to attend practices and learn about collegiate debate.
-                  </p>
-                </div>
+
               </div>
             </section>
 
@@ -130,7 +125,7 @@ export default function Prospects() {
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="text-usc-red" />
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-700">Annenberg School for Communication & Journalism</p>
+                                            <p className="text-gray-700">Annenberg School for Communication &amp; Journalism</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -165,7 +160,7 @@ export default function Prospects() {
 
         {/* Relevant Links & Materials Section */}
         <section className="mt-16">
-          <h2 className="text-4xl font-caslon text-usc-red text-center mb-8">Resources & Materials</h2>
+                              <h2 className="text-4xl font-caslon text-usc-red text-center mb-8">Resources &amp; Materials</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-8 rounded-lg">
               <div className="flex items-center gap-3 mb-4">
@@ -217,8 +212,8 @@ export default function Prospects() {
           <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
             <div className="max-w-4xl mx-auto">
               <h3 className="text-2xl font-caslon text-center mb-6">Get in Touch</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
+              <div className="space-y-6">
+                <div className="grid md:grid-cols-3 gap-6">
                   <div className="flex items-center gap-3">
                     <FontAwesomeIcon icon={faEnvelope} className="text-usc-yellow" />
                     <div>
@@ -241,7 +236,7 @@ export default function Prospects() {
                     </div>
                   </div>
                 </div>
-                <div className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white bg-opacity-10 p-4 rounded border-2 border-dashed border-white border-opacity-30">
                     <h4 className="font-semibold mb-2">Recruitment Coordinator</h4>
                     <p className="text-sm opacity-90">[Add name and contact info for recruitment coordinator]</p>

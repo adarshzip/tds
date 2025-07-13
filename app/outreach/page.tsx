@@ -155,7 +155,7 @@ export default function Outreach() {
           <h2 className="text-4xl font-caslon text-usc-red text-center mb-12">Get Involved</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4">For Schools & Organizations</h3>
+                              <h3 className="text-2xl font-semibold mb-4">For Schools &amp; Organizations</h3>
               <p className="mb-6">
                 Interested in bringing debate to your school or organization? 
                 We're always looking for new partners to expand our reach.

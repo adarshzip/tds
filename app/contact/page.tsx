@@ -33,132 +33,75 @@ export default function Contact() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="space-y-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <section>
               <h2 className="text-3xl font-caslon text-usc-red mb-6">Get in Touch</h2>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="text-usc-red mt-1">
-                    <FontAwesomeIcon icon={faEnvelope} className="text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Email</h3>
-                    <a href="mailto:debate@usc.edu" className="text-usc-red hover:underline">debate@usc.edu</a>
-                    <p className="text-sm text-gray-600 mt-1">General inquiries and information</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="text-usc-red mt-1">
-                    <FontAwesomeIcon icon={faPhone} className="text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Phone</h3>
-                    <a href="tel:+1-213-740-0900" className="text-usc-red hover:underline">(213) 740-0900</a>
-                    <p className="text-sm text-gray-600 mt-1">Office phone - call during business hours</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="text-usc-red mt-1">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className="text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Office Location</h3>
-                    <p className="text-gray-700">ASC 200</p>
-                    <p className="text-gray-700">Annenberg School for Communication & Journalism</p>
-                    <p className="text-gray-700">3502 Watt Way</p>
-                    <p className="text-gray-700">Los Angeles, CA 90089</p>
-                    <p className="text-sm text-gray-600 mt-1">Main office and practice facilities</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="text-usc-red mt-1">
-                    <FontAwesomeIcon icon={faClock} className="text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Office Hours</h3>
-                    <p className="text-gray-700">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p className="text-gray-700">Saturday: 10:00 AM - 2:00 PM</p>
-                    <p className="text-sm text-gray-600 mt-1">Pacific Time Zone</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-caslon text-usc-red mb-6">Contact Methods</h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Primary Contact</h3>
-                  <div className="bg-white border border-gray-200 rounded-lg p-4">
-                    <div className="flex items-center gap-3 mb-2">
-                      <FontAwesomeIcon icon={faEnvelope} className="text-usc-red" />
-                      <span className="font-medium">General Inquiries</span>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Contact Info */}
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <FontAwesomeIcon icon={faEnvelope} className="text-usc-red text-lg" />
+                    <div>
+                      <h3 className="font-semibold">Email</h3>
+                      <a href="mailto:debate@usc.edu" className="text-usc-red hover:underline">debate@usc.edu</a>
                     </div>
-                    <a href="mailto:debate@usc.edu" className="text-usc-red hover:underline">debate@usc.edu</a>
-                    <p className="text-sm text-gray-600 mt-1">Response time: Within 24-48 hours</p>
                   </div>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Emergency Contact</h3>
-                  <div className="bg-white border border-gray-200 rounded-lg p-4">
-                    <div className="flex items-center gap-3 mb-2">
-                      <FontAwesomeIcon icon={faPhone} className="text-usc-red" />
-                      <span className="font-medium">Urgent Matters</span>
+                  
+                  <div className="flex items-center gap-3">
+                    <FontAwesomeIcon icon={faPhone} className="text-usc-red text-lg" />
+                    <div>
+                      <h3 className="font-semibold">Phone</h3>
+                      <a href="tel:+1-213-740-0900" className="text-usc-red hover:underline">(213) 740-0900</a>
                     </div>
-                    <a href="tel:+1-213-740-0900" className="text-usc-red hover:underline">(213) 740-0900</a>
-                    <p className="text-sm text-gray-600 mt-1">Available during office hours only</p>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <FontAwesomeIcon icon={faMapMarkerAlt} className="text-usc-red text-lg mt-1" />
+                    <div>
+                      <h3 className="font-semibold">Office</h3>
+                      <p className="text-sm text-gray-700">ASC 200, Annenberg School</p>
+                      <p className="text-sm text-gray-700">3502 Watt Way, Los Angeles, CA 90089</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3">
+                    <FontAwesomeIcon icon={faClock} className="text-usc-red text-lg" />
+                    <div>
+                      <h3 className="font-semibold">Hours</h3>
+                      <p className="text-sm text-gray-700">Mon-Fri: 9AM-5PM, Sat: 10AM-2PM</p>
+                    </div>
                   </div>
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Social Media</h3>
-                  <div className="flex gap-4">
+                {/* Social Media */}
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-gray-800">Follow Us</h3>
+                  <div className="flex gap-3">
                     <a 
                       href="https://www.instagram.com/usctrojandebate/" 
-                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-lg hover:shadow-lg transition-shadow"
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-3 rounded-lg hover:shadow-lg transition-shadow"
                       aria-label="Follow us on Instagram"
                     >
-                      <FontAwesomeIcon icon={faInstagramBrand} className="text-2xl" />
+                      <FontAwesomeIcon icon={faInstagramBrand} className="text-xl" />
                     </a>
                     <a 
                       href="https://twitter.com/usctrojandebate" 
-                      className="bg-blue-500 text-white p-4 rounded-lg hover:shadow-lg transition-shadow"
+                      className="bg-blue-500 text-white p-3 rounded-lg hover:shadow-lg transition-shadow"
                       aria-label="Follow us on Twitter"
                     >
-                      <FontAwesomeIcon icon={faTwitterBrand} className="text-2xl" />
+                      <FontAwesomeIcon icon={faTwitterBrand} className="text-xl" />
                     </a>
                     <a 
                       href="https://www.linkedin.com/company/usc-trojan-debate-squad" 
-                      className="bg-blue-700 text-white p-4 rounded-lg hover:shadow-lg transition-shadow"
+                      className="bg-blue-700 text-white p-3 rounded-lg hover:shadow-lg transition-shadow"
                       aria-label="Follow us on LinkedIn"
                     >
-                      <FontAwesomeIcon icon={faLinkedinBrand} className="text-2xl" />
+                      <FontAwesomeIcon icon={faLinkedinBrand} className="text-xl" />
                     </a>
                   </div>
-                  <p className="text-sm text-gray-600 mt-2">Follow us for updates, tournament results, and team news</p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">Mailing Address</h3>
-                  <div className="bg-white border border-gray-200 rounded-lg p-4">
-                    <div className="flex items-start gap-3 mb-2">
-                      <FontAwesomeIcon icon={faMapMarkerAlt} className="text-usc-red mt-1" />
-                      <span className="font-medium">USC Trojan Debate Squad</span>
-                    </div>
-                    <div className="text-gray-700">
-                      <p>Annenberg School for Communication & Journalism</p>
-                      <p>ASC 200</p>
-                      <p>3502 Watt Way</p>
-                      <p>Los Angeles, CA 90089</p>
-                    </div>
-                    <p className="text-sm text-gray-600 mt-2">For official correspondence and documents</p>
-                  </div>
+                  <p className="text-sm text-gray-600">For updates, tournament results, and team news</p>
                 </div>
               </div>
             </section>
@@ -304,190 +247,40 @@ export default function Contact() {
               </div>
             </section>
           </div>
-
-          {/* Contact Form */}
-          <div className="bg-gray-50 p-8 rounded-lg">
-            <h2 className="text-3xl font-caslon text-usc-red mb-6">Send Us a Message</h2>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-usc-red focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-usc-red focus:border-transparent"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-usc-red focus:border-transparent"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-usc-red focus:border-transparent"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject *
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-usc-red focus:border-transparent"
-                >
-                  <option value="">Select a subject</option>
-                  <option value="join">Joining the Team</option>
-                  <option value="outreach">Community Outreach</option>
-                  <option value="donation">Donation/Support</option>
-                  <option value="tournament">Tournament Information</option>
-                  <option value="media">Media Inquiries</option>
-                  <option value="alumni">Alumni Relations</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={6}
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-usc-red focus:border-transparent resize-vertical"
-                  placeholder="Please provide details about your inquiry..."
-                ></textarea>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <input
-                  type="checkbox"
-                  id="newsletter"
-                  name="newsletter"
-                  className="mt-1 h-4 w-4 text-usc-red focus:ring-usc-red border-gray-300 rounded"
-                />
-                <label htmlFor="newsletter" className="text-sm text-gray-700">
-                  Subscribe to our newsletter for team updates, tournament results, and upcoming events
-                </label>
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full bg-usc-red text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
         </div>
 
         {/* Map Section */}
         <section className="mt-16">
           <h2 className="text-3xl font-caslon text-usc-red text-center mb-8">Find Us on Campus</h2>
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold text-usc-red mb-4">Building Location</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Annenberg School for Communication & Journalism</h4>
-                  <p className="text-gray-700">ASC 200 (Second Floor)</p>
-                  <p className="text-gray-700">3502 Watt Way</p>
-                  <p className="text-gray-700">Los Angeles, CA 90089</p>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Facilities</h4>
-                  <ul className="text-gray-700 space-y-1">
-                    <li>• Main office and administrative space</li>
-                    <li>• Dedicated practice rooms</li>
-                    <li>• Evidence library and research materials</li>
-                    <li>• Computer workstations for debate prep</li>
-                    <li>• Conference room for team meetings</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Access</h4>
-                  <ul className="text-gray-700 space-y-1">
-                    <li>• USC ID required for building access</li>
-                    <li>• Visitors must check in at front desk</li>
-                    <li>• Accessible entrance on north side</li>
-                    <li>• Elevator available to second floor</li>
-                  </ul>
-                </div>
+          <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto">
+            <h3 className="text-xl font-semibold text-usc-red mb-6 text-center">Building Location</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-3">Annenberg School for Communication &amp; Journalism</h4>
+                <p className="text-gray-700">ASC 200 (Second Floor)</p>
+                <p className="text-gray-700">3502 Watt Way</p>
+                <p className="text-gray-700">Los Angeles, CA 90089</p>
               </div>
-            </div>
+              
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-3">Facilities</h4>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• Main office and administrative space</li>
+                  <li>• Dedicated practice rooms</li>
+                  <li>• Evidence library and research materials</li>
+                  <li>• Computer workstations for debate prep</li>
+                  <li>• Conference room for team meetings</li>
+                </ul>
+              </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-xl font-semibold text-usc-red mb-4">Getting Here</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Parking</h4>
-                  <p className="text-gray-700 mb-2">USC Parking Structure D</p>
-                  <p className="text-sm text-gray-600">Located at 3601 Watt Way, adjacent to the Annenberg building</p>
-                  <p className="text-sm text-gray-600">Daily parking: $20 | USC permit holders: Free</p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Public Transit</h4>
-                  <p className="text-gray-700 mb-2">Metro Expo Line - USC Station</p>
-                  <p className="text-sm text-gray-600">Exit at Jefferson/USC Station, walk 5 minutes north</p>
-                  <p className="text-sm text-gray-600">Bus routes: 38, 102, 200, 204, 754</p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Walking Directions</h4>
-                  <ul className="text-gray-700 space-y-1 text-sm">
-                    <li>• From USC Village: 5 minutes south</li>
-                    <li>• From Tommy Trojan: 8 minutes west</li>
-                    <li>• From Doheny Library: 10 minutes northwest</li>
-                    <li>• From Leavey Library: 7 minutes southwest</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Campus Map</h4>
-                  <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center min-h-[120px] flex flex-col justify-center">
-                    <p className="text-sm text-gray-500">Interactive campus map showing building location</p>
-                  </div>
-                </div>
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-3">Access</h4>
+                <ul className="text-gray-700 space-y-1">
+                  <li>• USC ID required for building access</li>
+                  <li>• Visitors must check in at front desk</li>
+                  <li>• Accessible entrance on north side</li>
+                  <li>• Elevator available to second floor</li>
+                </ul>
               </div>
             </div>
           </div>

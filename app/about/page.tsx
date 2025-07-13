@@ -23,13 +23,13 @@ export const metadata: Metadata = {
                         <div className="flex flex-col gap-2 pt-1">
                             <p>The USC Trojan Debate Squad is a unique learning environment that represents USC&apos;s longstanding commitment to excellence in the undergraduate educational experience.</p>
                             <p>When debate at USC began in 1880, as USC&apos;s first chartered student organization, it reflected the importance of public speaking as a skill needed for young Trojans. Trojan Debate, then supported by the College of Oratory, trained talented students and prepared them for competitions. Over the last 130 years the Trojan Debate Squad has played a leading role in teaching debate as a unique form of critical thinking and advocacy.</p>
-                            <p>Today, the Annenberg School for Communication & Journalism hosts the debate squad and its faculty teaches debate as an essential skill for today&apos;s increasingly information-rich society. The squad competes in policy debate competitions hosted by the National Debate Tournament (NDT) and the Cross-Examination Debate Association (CEDA).</p>
+                            <p>Today, the Annenberg School for Communication &amp; Journalism hosts the debate squad and its faculty teaches debate as an essential skill for today&apos;s increasingly information-rich society. The squad competes in policy debate competitions hosted by the National Debate Tournament (NDT) and the Cross-Examination Debate Association (CEDA).</p>
                             <p>Being a part of the squad is an opportunity for a unique educational experience. Trojan debaters excel in the classroom, at competitions, and in all of our projects.</p>
                         </div>
                         
                         {/* Photo Placeholders Section */}
                         <section className="mt-12">
-                            <h2 className="text-usc-red text-center text-2xl mb-8">Team Photos & Information</h2>
+                            <h2 className="text-usc-red text-center text-2xl mb-8">Team Photos &amp; Information</h2>
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {/* Placeholder 1 */}
                                 <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center min-h-[300px] flex flex-col justify-center">
@@ -99,70 +99,130 @@ export const metadata: Metadata = {
                             </div>
                         </section>
 
-                        <div className="flex flex-col gap-4 pt-1">
+                        <div className="flex flex-col gap-8 pt-1">
                             <h2 className="text-usc-red text-center text-2xl">Coaches</h2>
-                            <div>
-                                <h3 className="text-usc-red text-xl">Sean Kennedy, Director of Debate</h3>
-                                <div className="flex flex-row">
-                                    <p>Bio and photo(?) go here.</p>
-                                </div>
-                            </div>
                             
-                            <div>
-                                <h3 className="text-usc-red text-xl">Joshua Michael</h3>
-                                <div className="flex flex-row">
-                                    <p>Bio and photo(?) go here</p>
+                            {/* Sean Kennedy - Left aligned */}
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <div className="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="text-gray-400 text-center">
+                                        <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                        </svg>
+                                        <p className="text-sm">Headshot</p>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-usc-red text-xl mb-3">Sean Kennedy, Director of Debate</h3>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        [Bio placeholder] Sean Kennedy serves as the Director of Debate for the USC Trojan Debate Squad. 
+                                        His leadership and expertise have guided the team to numerous successes in national competitions. 
+                                        Add detailed bio information here including background, achievements, and coaching philosophy.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div>
-                                <h3 className="text-usc-red text-xl">Julian Kuffour</h3>
-                                <div className="flex flex-row">
-                                    <p>Bio and photo(?) go here</p>
+                            {/* Joshua Michael - Right aligned */}
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <div className="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="text-gray-400 text-center">
+                                        <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                        </svg>
+                                        <p className="text-sm">Headshot</p>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-usc-red text-xl mb-3">Joshua Michael</h3>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        [Bio placeholder] Joshua Michael brings extensive experience in policy debate coaching and 
+                                        has been instrumental in developing the team's strategic approach. Add detailed bio information 
+                                        here including background, achievements, and coaching philosophy.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div>
-                                <h3 className="text-usc-red text-xl">Nate Martin</h3>
-                                <div className="flex flex-row">
-                                    <p>Bio and photo(?) go here</p>
+                            {/* Julian Kuffour - Left aligned */}
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <div className="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="text-gray-400 text-center">
+                                        <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                        </svg>
+                                        <p className="text-sm">Headshot</p>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-usc-red text-xl mb-3">Julian Kuffour</h3>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        [Bio placeholder] Julian Kuffour contributes his expertise in debate theory and argumentation 
+                                        to help students develop critical thinking skills. Add detailed bio information here including 
+                                        background, achievements, and coaching philosophy.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div>
-                                <h3 className="text-usc-red text-xl">Ross Fitzpatrick</h3>
-                                <div className="flex flex-row">
-                                    <p>Bio and photo(?) go here</p>
+                            {/* Nate Martin - Right aligned */}
+                            <div className="flex flex-col md:flex-row-reverse gap-6 items-start">
+                                <div className="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="text-gray-400 text-center">
+                                        <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                        </svg>
+                                        <p className="text-sm">Headshot</p>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-usc-red text-xl mb-3">Nate Martin</h3>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        [Bio placeholder] Nate Martin specializes in evidence analysis and research methodology, 
+                                        helping students develop strong argumentative foundations. Add detailed bio information 
+                                        here including background, achievements, and coaching philosophy.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Ross Fitzpatrick - Left aligned */}
+                            <div className="flex flex-col md:flex-row gap-6 items-start">
+                                <div className="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <div className="text-gray-400 text-center">
+                                        <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                        </svg>
+                                        <p className="text-sm">Headshot</p>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-usc-red text-xl mb-3">Ross Fitzpatrick</h3>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        [Bio placeholder] Ross Fitzpatrick focuses on public speaking and presentation skills, 
+                                        helping students develop confidence and effective communication techniques. Add detailed 
+                                        bio information here including background, achievements, and coaching philosophy.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-white ">
-                <div className="py-5 mx-auto max-w-6xl basis-full text-black px-10">
-                    <h1 className="text-usc-red text-3xl pb-2 text-center">Learn More</h1>
-                    <div className="flex flex-col gap-5">
-                        <div className="flex flex-col">
-                            <Link href="/about/history" className="text-usc-red text-xl underline">Team History</Link>
-                            <p>Learn about the history behind USC&apos;s oldest chartered student organization.</p>
-                        </div>
-                                            <div className="flex flex-col">
-                        <Link href="/about/history/NDT" className="text-usc-red text-xl underline">NDT History</Link>
-                        <p>Learn about how USC has historically performed at the National Debate Tournament (NDT).</p>
-                    </div>
-                    <div className="flex flex-col">
-                        <Link href="/about/history/directors" className="text-usc-red text-xl underline">Past Directors</Link>
-                        <p>A listing of past directors of the USC TDS.</p>
-                    </div>
-                    <div className="flex flex-col">
-                        <Link href="/about/team" className="text-usc-red text-xl underline">Current Team Members</Link>
-                        <p>Meet the current members of the Trojan Debate Squad and learn about their achievements.</p>
-                    </div>
-                    <div className="flex flex-col">
-                        <Link href="/resources" className="text-usc-red text-xl underline">Resources</Link>
-                        <p>Access debate materials, evidence packets, training guides, and educational resources.</p>
-                    </div>
+            <div className="bg-gray-50 py-8">
+                <div className="max-w-4xl mx-auto px-10">
+                    <h2 className="text-usc-red text-2xl text-center mb-6">Learn More</h2>
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                        <Link 
+                            href="/about/team" 
+                            className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center"
+                        >
+                            <h3 className="text-usc-red font-semibold mb-1">Current Team Members</h3>
+                            <p className="text-sm text-gray-600">Meet our current squad members</p>
+                        </Link>
+                        <Link 
+                            href="/resources" 
+                            className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center"
+                        >
+                            <h3 className="text-usc-red font-semibold mb-1">Resources</h3>
+                            <p className="text-sm text-gray-600">Access debate materials and guides</p>
+                        </Link>
                     </div>
                 </div>
             </div>

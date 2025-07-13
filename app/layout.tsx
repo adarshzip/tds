@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   keywords: ["USC", "debate", "policy debate", "Trojan Debate Squad", "NDT", "CEDA", "collegiate debate", "Annenberg"],
   authors: [{ name: "USC Trojan Debate Squad" }],
   creator: "USC Trojan Debate Squad",
-  publisher: "USC Annenberg School for Communication & Journalism",
+          publisher: "USC Annenberg School for Communication &amp; Journalism",
   formatDetection: {
     email: false,
     address: false,

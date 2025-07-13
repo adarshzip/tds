@@ -69,7 +69,7 @@ export default function Donate() {
           <h2 className="text-4xl font-caslon text-usc-red text-center mb-12">What Your Support Funds</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-usc-red mb-4">Tournament Travel & Expenses</h3>
+                              <h3 className="text-2xl font-semibold text-usc-red mb-4">Tournament Travel &amp; Expenses</h3>
               <p className="text-gray-700 mb-4">
                 Your donations help cover the costs of traveling to regional and national tournaments, 
                 including transportation, lodging, and registration fees.
@@ -82,7 +82,7 @@ export default function Donate() {
               </ul>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-usc-red mb-4">Coaching & Training</h3>
+                              <h3 className="text-2xl font-semibold text-usc-red mb-4">Coaching &amp; Training</h3>
               <p className="text-gray-700 mb-4">
                 Support our coaching staff and training programs that develop the next generation 
                 of champion debaters.
@@ -123,66 +123,7 @@ export default function Donate() {
           </div>
         </section>
 
-        {/* Donation Levels */}
-        <section className="mb-16">
-          <h2 className="text-4xl font-caslon text-usc-red text-center mb-12">Donation Levels</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-lg text-center hover:border-usc-red transition-colors">
-              <h3 className="text-2xl font-semibold text-usc-red mb-2">Friend</h3>
-              <div className="text-3xl font-bold text-gray-800 mb-4">$50</div>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• Recognition in team newsletter</li>
-                <li>• Invitation to team events</li>
-                <li>• Thank you letter from team</li>
-              </ul>
-              <button className="w-full bg-usc-red text-white py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                Donate $50
-              </button>
-            </div>
-            <div className="bg-white border-2 border-usc-red p-6 rounded-lg text-center relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-usc-yellow text-black px-4 py-1 rounded-full text-sm font-semibold">
-                Popular
-              </div>
-              <h3 className="text-2xl font-semibold text-usc-red mb-2">Supporter</h3>
-              <div className="text-3xl font-bold text-gray-800 mb-4">$100</div>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• All Friend benefits</li>
-                <li>• Name on team website</li>
-                <li>• Tournament updates</li>
-                <li>• Team photo</li>
-              </ul>
-              <button className="w-full bg-usc-red text-white py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                Donate $100
-              </button>
-            </div>
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-lg text-center hover:border-usc-red transition-colors">
-              <h3 className="text-2xl font-semibold text-usc-red mb-2">Patron</h3>
-              <div className="text-3xl font-bold text-gray-800 mb-4">$250</div>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• All Supporter benefits</li>
-                <li>• VIP tournament access</li>
-                <li>• Personal thank you from coaches</li>
-                <li>• Team merchandise</li>
-              </ul>
-              <button className="w-full bg-usc-red text-white py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                Donate $250
-              </button>
-            </div>
-            <div className="bg-white border-2 border-usc-yellow p-6 rounded-lg text-center">
-              <h3 className="text-2xl font-semibold text-usc-red mb-2">Champion</h3>
-              <div className="text-3xl font-bold text-gray-800 mb-4">$500+</div>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• All Patron benefits</li>
-                <li>• Named scholarship opportunity</li>
-                <li>• Private team dinner</li>
-                <li>• Legacy recognition</li>
-              </ul>
-              <button className="w-full bg-usc-red text-white py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                Donate $500+
-              </button>
-            </div>
-          </div>
-        </section>
+
 
         {/* Other Ways to Give */}
         <section className="mb-16">
