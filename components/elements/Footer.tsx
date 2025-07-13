@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Header() {
+export default function Footer() {
     return(
         <footer className="bg-usc-red">
             <div className="flex items-center pl-4 font-light basis-full justify-between">

@@ -26,6 +26,79 @@ export const metadata: Metadata = {
                             <p>Today, the Annenberg School for Communication & Journalism hosts the debate squad and its faculty teaches debate as an essential skill for today&apos;s increasingly information-rich society. The squad competes in policy debate competitions hosted by the National Debate Tournament (NDT) and the Cross-Examination Debate Association (CEDA).</p>
                             <p>Being a part of the squad is an opportunity for a unique educational experience. Trojan debaters excel in the classroom, at competitions, and in all of our projects.</p>
                         </div>
+                        
+                        {/* Photo Placeholders Section */}
+                        <section className="mt-12">
+                            <h2 className="text-usc-red text-center text-2xl mb-8">Team Photos & Information</h2>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {/* Placeholder 1 */}
+                                <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center min-h-[300px] flex flex-col justify-center">
+                                    <div className="text-gray-400 mb-4">
+                                        <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-gray-600 mb-2">Photo Placeholder 1</h3>
+                                    <p className="text-sm text-gray-500">Add photo and description here</p>
+                                </div>
+
+                                {/* Placeholder 2 */}
+                                <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center min-h-[300px] flex flex-col justify-center">
+                                    <div className="text-gray-400 mb-4">
+                                        <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-gray-600 mb-2">Photo Placeholder 2</h3>
+                                    <p className="text-sm text-gray-500">Add photo and description here</p>
+                                </div>
+
+                                {/* Placeholder 3 */}
+                                <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center min-h-[300px] flex flex-col justify-center">
+                                    <div className="text-gray-400 mb-4">
+                                        <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-gray-600 mb-2">Photo Placeholder 3</h3>
+                                    <p className="text-sm text-gray-500">Add photo and description here</p>
+                                </div>
+
+                                {/* Placeholder 4 */}
+                                <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center min-h-[300px] flex flex-col justify-center">
+                                    <div className="text-gray-400 mb-4">
+                                        <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-gray-600 mb-2">Photo Placeholder 4</h3>
+                                    <p className="text-sm text-gray-500">Add photo and description here</p>
+                                </div>
+
+                                {/* Placeholder 5 */}
+                                <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center min-h-[300px] flex flex-col justify-center">
+                                    <div className="text-gray-400 mb-4">
+                                        <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-gray-600 mb-2">Photo Placeholder 5</h3>
+                                    <p className="text-sm text-gray-500">Add photo and description here</p>
+                                </div>
+
+                                {/* Placeholder 6 */}
+                                <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center min-h-[300px] flex flex-col justify-center">
+                                    <div className="text-gray-400 mb-4">
+                                        <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <h3 className="text-lg font-semibold text-gray-600 mb-2">Photo Placeholder 6</h3>
+                                    <p className="text-sm text-gray-500">Add photo and description here</p>
+                                </div>
+                            </div>
+                        </section>
+
                         <div className="flex flex-col gap-4 pt-1">
                             <h2 className="text-usc-red text-center text-2xl">Coaches</h2>
                             <div>
@@ -74,14 +147,22 @@ export const metadata: Metadata = {
                             <Link href="/about/history" className="text-usc-red text-xl underline">Team History</Link>
                             <p>Learn about the history behind USC&apos;s oldest chartered student organization.</p>
                         </div>
-                        <div className="flex flex-col">
-                            <Link href="/about/history/NDT" className="text-usc-red text-xl underline">NDT History</Link>
-                            <p>Learn about how USC has historically performed at the National Debate Tournament (NDT).</p>
-                        </div>
-                        <div className="flex flex-col">
-                            <Link href="/about/history/directors" className="text-usc-red text-xl underline">Past Directors</Link>
-                            <p>A listing of past directors of the USC TDS.</p>
-                        </div>
+                                            <div className="flex flex-col">
+                        <Link href="/about/history/NDT" className="text-usc-red text-xl underline">NDT History</Link>
+                        <p>Learn about how USC has historically performed at the National Debate Tournament (NDT).</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <Link href="/about/history/directors" className="text-usc-red text-xl underline">Past Directors</Link>
+                        <p>A listing of past directors of the USC TDS.</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <Link href="/about/team" className="text-usc-red text-xl underline">Current Team Members</Link>
+                        <p>Meet the current members of the Trojan Debate Squad and learn about their achievements.</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <Link href="/resources" className="text-usc-red text-xl underline">Resources</Link>
+                        <p>Access debate materials, evidence packets, training guides, and educational resources.</p>
+                    </div>
                     </div>
                 </div>
             </div>
