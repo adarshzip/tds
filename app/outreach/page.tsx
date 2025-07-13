@@ -130,7 +130,7 @@ export default function Outreach() {
           <h2 className="text-4xl font-caslon text-usc-red text-center mb-12">Success Stories</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-usc-red mb-4">Maria's Journey</h3>
+              <h3 className="text-2xl font-semibold text-usc-red mb-4">Maria&apos;s Journey</h3>
               <p className="text-gray-700 mb-4 italic">
                 &quot;Through USC&apos;s debate mentorship program, I discovered my passion for 
                 public speaking and critical thinking. Now I&apos;m studying political science 
