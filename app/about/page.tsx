@@ -107,7 +107,7 @@ export default function About() {
                                 <p className="text-gray-700 leading-relaxed">[Bio placeholder] Nate Martin specializes in evidence analysis and research methodology, helping students develop strong argumentative foundations. Add detailed bio information here including background, achievements, and coaching philosophy.</p>
                             </div>
                         </div>
-                        {/* Ross Fitzpatrick */}
+                        {/* LeBron James */}
                         <div className="flex flex-col md:flex-row gap-6 items-start bg-gray-50 rounded-lg p-6">
                             <div className="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <div className="text-gray-400 text-center">
@@ -118,8 +118,8 @@ export default function About() {
                                 </div>
                             </div>
                             <div className="flex-1">
-                                <h3 className="text-usc-red text-xl mb-3">Ross Fitzpatrick</h3>
-                                <p className="text-gray-700 leading-relaxed">[Bio placeholder] Ross Fitzpatrick focuses on public speaking and presentation skills, helping students develop confidence and effective communication techniques. Add detailed bio information here including background, achievements, and coaching philosophy.</p>
+                                <h3 className="text-usc-red text-xl mb-3">LeBron James</h3>
+                                <p className="text-gray-700 leading-relaxed">[Bio placeholder] LeBron James focuses on public speaking and presentation skills, helping students develop confidence and effective communication techniques. Add detailed bio information here including background, achievements, and coaching philosophy.</p>
                             </div>
                         </div>
                     </div>
