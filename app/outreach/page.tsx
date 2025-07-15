@@ -45,7 +45,7 @@ export default function Outreach() {
         {/* Programs Grid */}
         <section className="mb-16">
           <h2 className="text-4xl font-caslon text-usc-red text-center mb-12">Our Programs</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-start place-items-center">
             {/* High School Mentorship */}
             <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
               <div className="text-usc-red mb-4">
@@ -62,24 +62,6 @@ export default function Outreach() {
                 <li>• Tournament preparation</li>
                 <li>• Equipment and resource sharing</li>
                 <li>• College application guidance</li>
-              </ul>
-            </div>
-
-            {/* Community Workshops */}
-            <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="text-usc-red mb-4">
-                <FontAwesomeIcon icon={faUsers} className="text-4xl" />
-              </div>
-              <h3 className="text-2xl font-semibold text-usc-red mb-4">Community Workshops</h3>
-              <p className="text-gray-700 mb-4">
-                We host public workshops and clinics throughout the year to introduce 
-                debate skills to broader audiences and promote civic engagement.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Public speaking clinics</li>
-                <li>• Critical thinking workshops</li>
-                <li>• Research methodology training</li>
-                <li>• Civic engagement discussions</li>
               </ul>
             </div>
 
@@ -146,51 +128,6 @@ export default function Outreach() {
                 skills that will serve them throughout their lives.&quot;
               </p>
               <p className="text-sm text-gray-600">- Dr. Sarah Johnson, Lincoln High School Principal</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Get Involved */}
-        <section className="mb-16">
-          <h2 className="text-4xl font-caslon text-usc-red text-center mb-12">Get Involved</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
-                              <h3 className="text-2xl font-semibold mb-4">For Schools &amp; Organizations</h3>
-              <p className="mb-6">
-                Interested in bringing debate to your school or organization? 
-                We&apos;re always looking for new partners to expand our reach.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li>• Customized program development</li>
-                <li>• Professional development for teachers</li>
-                <li>• Tournament hosting support</li>
-                <li>• Resource sharing and collaboration</li>
-              </ul>
-              <Link 
-                href="/contact" 
-                className="bg-usc-yellow text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors inline-block"
-              >
-                Contact Us
-              </Link>
-            </div>
-            <div className="bg-usc-yellow text-black p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4">For USC Students</h3>
-              <p className="mb-6">
-                Join our outreach team and make a difference in the Los Angeles community 
-                while developing your own leadership and teaching skills.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li>• Mentorship opportunities</li>
-                <li>• Teaching experience</li>
-                <li>• Leadership development</li>
-                <li>• Community service hours</li>
-              </ul>
-              <Link 
-                href="/prospects" 
-                className="bg-usc-red text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors inline-block"
-              >
-                Join the Team
-              </Link>
             </div>
           </div>
         </section>

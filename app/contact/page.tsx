@@ -46,15 +46,7 @@ export default function Contact() {
                       <FontAwesomeIcon icon={faEnvelope} className="text-usc-red text-lg" />
                       <div>
                         <h3 className="font-semibold">Email</h3>
-                        <a href="mailto:debate@usc.edu" className="text-usc-red hover:underline">debate@usc.edu</a>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-3">
-                      <FontAwesomeIcon icon={faPhone} className="text-usc-red text-lg" />
-                      <div>
-                        <h3 className="font-semibold">Phone</h3>
-                        <a href="tel:+1-213-740-0900" className="text-usc-red hover:underline">(213) 740-0900</a>
+                        <a href="mailto:debate@usc.edu" className="text-usc-red hover:underline">Coming Soon</a>
                       </div>
                     </div>
                   </div>
@@ -64,16 +56,8 @@ export default function Contact() {
                       <FontAwesomeIcon icon={faMapMarkerAlt} className="text-usc-red text-lg mt-1" />
                       <div>
                         <h3 className="font-semibold">Office</h3>
-                        <p className="text-sm text-gray-700">ASC 200, Annenberg School</p>
+                        <p className="text-sm text-gray-700">ASC 330</p>
                         <p className="text-sm text-gray-700">3502 Watt Way, Los Angeles, CA 90089</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-3">
-                      <FontAwesomeIcon icon={faClock} className="text-usc-red text-lg" />
-                      <div>
-                        <h3 className="font-semibold">Hours</h3>
-                        <p className="text-sm text-gray-700">Mon-Fri: 9AM-5PM, Sat: 10AM-2PM</p>
                       </div>
                     </div>
                   </div>
@@ -91,20 +75,6 @@ export default function Contact() {
                         aria-label="Follow us on Instagram"
                       >
                         <FontAwesomeIcon icon={faInstagramBrand} className="text-2xl" />
-                      </a>
-                      <a 
-                        href="https://twitter.com/usctrojandebate" 
-                        className="bg-blue-500 text-white p-4 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
-                        aria-label="Follow us on Twitter"
-                      >
-                        <FontAwesomeIcon icon={faTwitterBrand} className="text-2xl" />
-                      </a>
-                      <a 
-                        href="https://www.linkedin.com/company/usc-trojan-debate-squad" 
-                        className="bg-blue-700 text-white p-4 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
-                        aria-label="Follow us on LinkedIn"
-                      >
-                        <FontAwesomeIcon icon={faLinkedinBrand} className="text-2xl" />
                       </a>
                     </div>
                   </div>
@@ -263,7 +233,7 @@ export default function Contact() {
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <h4 className="font-semibold text-gray-800 mb-3">Annenberg School for Communication &amp; Journalism</h4>
-                <p className="text-gray-700">ASC 200 (Second Floor)</p>
+                <p className="text-gray-700">ASC 330 (Third Floor)</p>
                 <p className="text-gray-700">3502 Watt Way</p>
                 <p className="text-gray-700">Los Angeles, CA 90089</p>
               </div>
@@ -274,7 +244,6 @@ export default function Contact() {
                   <li>• Main office and administrative space</li>
                   <li>• Dedicated practice rooms</li>
                   <li>• Evidence library and research materials</li>
-                  <li>• Computer workstations for debate prep</li>
                   <li>• Conference room for team meetings</li>
                 </ul>
               </div>
@@ -282,10 +251,9 @@ export default function Contact() {
               <div>
                 <h4 className="font-semibold text-gray-800 mb-3">Access</h4>
                 <ul className="text-gray-700 space-y-1">
-                  <li>• USC ID required for building access</li>
-                  <li>• Visitors must check in at front desk</li>
+                  <li>• USC ID required for campus access</li>
                   <li>• Accessible entrance on north side</li>
-                  <li>• Elevator available to second floor</li>
+                  <li>• Elevators available</li>
                 </ul>
               </div>
             </div>
@@ -303,21 +271,9 @@ export default function Contact() {
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-usc-red mb-2">Do I need debate experience?</h3>
-              <p className="text-gray-700 text-sm">
-                No! We welcome students of all experience levels and provide comprehensive training for beginners.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-usc-red mb-2">When are practices held?</h3>
               <p className="text-gray-700 text-sm">
-                Regular practices are held Monday, Wednesday, and Friday from 4:00-6:00 PM in the Annenberg building.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-usc-red mb-2">How can my school partner with USC?</h3>
-              <p className="text-gray-700 text-sm">
-                Visit our <Link href="/outreach" className="text-usc-red hover:underline">Community Outreach</Link> page to learn about partnership opportunities.
+                Regular practices are held Wednesdays from 5:30-7:30 PM in ASC 330.
               </p>
             </div>
           </div>

@@ -73,27 +73,9 @@ export default function Header() {
                         <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/prospects" onClick={closeMenu}>
                             Prospects
                         </Link>
-                        
-                        {/* Programs Dropdown */}
-                        <div className="relative group">
-                            <button 
-                                className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow flex items-center gap-1 focus:outline-none"
-                                onClick={togglePrograms}
-                            >
-                                Programs
-                                <FontAwesomeIcon icon={faChevronDown} className="text-sm" />
-                            </button>
-                            <div className="absolute top-full left-0 bg-usc-red shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[200px] z-50">
-                                <Link 
-                                    href="/high-school" 
-                                    className="block px-4 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                    onClick={closeMenu}
-                                >
-                                    High School Programs
-                                </Link>
-                            </div>
-                        </div>
-                        
+                        <Link href="/programs" className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" onClick={closeMenu}>
+                            Programs
+                        </Link>
                         <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/outreach" onClick={closeMenu}>
                             Outreach
                         </Link>
@@ -146,21 +128,13 @@ export default function Header() {
                             >
                                 Prospects
                             </Link>
-                            
-                            {/* Programs Section */}
-                            <div className="border-t border-red-800">
-                                <div className="px-6 py-3 text-white font-semibold">
-                                    Programs
-                                </div>
-                                <Link 
-                                    href="/high-school" 
-                                    className="px-8 py-2 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors block focus:outline-none"
-                                    onClick={closeMenu}
-                                >
-                                    High School Programs
-                                </Link>
-                            </div>
-                            
+                            <Link 
+                                href="/programs" 
+                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                onClick={closeMenu}
+                            >
+                                Programs
+                            </Link>
                             <Link 
                                 href="/outreach" 
                                 className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"

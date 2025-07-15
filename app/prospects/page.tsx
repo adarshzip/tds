@@ -61,7 +61,7 @@ export default function Prospects() {
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold text-usc-red mb-2">Current USC Students</h3>
                   <p className="text-gray-700">
-                    All USC undergraduate and graduate students are welcome to join, regardless of major or debate experience.
+                    All USC undergraduate and graduate students are welcome to join, regardless of major.
                   </p>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
@@ -118,14 +118,14 @@ export default function Prospects() {
                   <FontAwesomeIcon icon={faCalendarAlt} className="text-usc-red" />
                   <div>
                     <h3 className="font-semibold">Regular Practices</h3>
-                    <p className="text-gray-700">Monday, Wednesday, Friday • 4:00 PM - 6:00 PM</p>
+                    <p className="text-gray-700">Wednesday • 5:30 PM - 7:30 PM</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="text-usc-red" />
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                                            <p className="text-gray-700">Annenberg School for Communication &amp; Journalism</p>
+                                            <p className="text-gray-700">ASC 330</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -142,8 +142,8 @@ export default function Prospects() {
               <h2 className="text-3xl font-caslon text-usc-red mb-6">How to Get Started</h2>
               <div className="space-y-4">
                 <div className="bg-usc-red text-white p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Step 1: Attend a Practice</h3>
-                  <p>Drop by any practice session to meet the team and see what we do.</p>
+                  <h3 className="text-xl font-semibold mb-2">Step 1: Express Interest</h3>
+                  <p>Let a coach or a student on the team know you&apos;re interested in joining the team.</p>
                 </div>
                 <div className="bg-usc-yellow text-black p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 2: Meet with Coaches</h3>
@@ -151,7 +151,7 @@ export default function Prospects() {
                 </div>
                 <div className="bg-usc-red text-white p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 3: Join the Team</h3>
-                  <p>Begin training and prepare for your first tournament experience.</p>
+                  <p>Begin attending practices and prepare for your first tournament experience.</p>
                 </div>
               </div>
             </section>
