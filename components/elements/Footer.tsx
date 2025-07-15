@@ -2,24 +2,32 @@ import Link from "next/link"
 
 export default function Footer() {
     return(
-        <footer className="bg-usc-red">
-            <div className="flex items-center pl-4 font-light basis-full justify-between">
-                <div className='flex flex-row font-caslon pt-5 pb-1 tracking-tighter'>
-                    <Link className='flex pr-0 text-3xl text-usc-yellow' href='/'>
-                        USC
-                    </Link>
-                    <Link className="flex pr-6 text-3xl text-white" href='/'>
-                        Debate
-                    </Link>
-                </div>
-                <div className="flex flex-row">
-                    <Link href="/sitemap" className="pr-6 transition duration-150 ease-in text-white hover:text-usc-yellow text-lg font-sans">Sitemap</Link>
+        <footer className="bg-usc-red pt-8">
+            <div className="flex flex-col items-center justify-center font-caslon mb-6 tracking-tighter">
+                <div className="flex flex-row items-center mb-2">
+                    <Link className='text-3xl text-usc-yellow pr-2' href='/'>USC</Link>
+                    <Link className="text-3xl text-white" href='/'>Debate</Link>
                 </div>
             </div>
-            <div className="flex items-center px-4 pb-4 font-light font-source_sans basis-full justify-between">
-                <p className="font-thin font-source_sans text-xs text-white">Copyright © 2024 USC Trojan Debate Squad</p>
-                <p className="hidden md:flex font-thin font-sans text-xs text-white">Designed and built by&nbsp;<Link href="https://adarsh.zip" className="text-white hover:font-medium hover:bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] hover:from-green-300 hover:via-emerald-400 hover:to-cyan-400 hover:text-transparent hover:bg-clip-text">Adarsh Agrawal</Link>.</p>
-            </div>
+            <nav className="w-full flex flex-col items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-center mb-6">
+                    <div>
+                        <ul className="space-y-1 text-sm">
+                            <li><Link href="/" className="text-white hover:text-usc-yellow transition">Home</Link></li>
+                            <li><Link href="/about" className="text-white hover:text-usc-yellow transition">About the Team</Link></li>
+                            <li><Link href="/prospects" className="text-white hover:text-usc-yellow transition">Join the Team</Link></li>
+                            <li><Link href="/outreach" className="text-white hover:text-usc-yellow transition">Community Outreach</Link></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul className="space-y-1 text-sm">
+                            <li><Link href="/donate" className="text-white hover:text-usc-yellow transition">Support the Team</Link></li>
+                            <li><Link href="/contact" className="text-white hover:text-usc-yellow transition">Contact Us</Link></li>
+                            <li><Link href="/high-school" className="text-white hover:text-usc-yellow transition">High School Programs</Link></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </footer>
     )
 }

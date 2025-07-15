@@ -64,103 +64,16 @@ export default function TeamMembers() {
           </div>
         </section>
 
-        {/* Senior Members */}
+        {/* Team Members (Unified) */}
         <section className="mb-16">
-          <h2 className="text-3xl font-caslon text-usc-red text-center mb-12">Senior Members</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Senior Member 1 */}
-            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="bg-gray-100 border-b border-gray-200 p-6 text-center min-h-[200px] flex flex-col justify-center">
-                <div className="text-gray-400 mb-4">
-                  <svg className="w-20 h-20 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-500">Senior Member Photo</p>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-usc-red mb-2">[Senior Member Name]</h3>
-                <p className="text-gray-600 mb-3">Senior • [Major]</p>
-                <div className="flex items-center gap-2 mb-3">
-                  <FontAwesomeIcon icon={faTrophy} className="text-usc-yellow" />
-                  <span className="text-sm text-gray-600">[Achievement/Award]</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-4">
-                  [Brief description of debate experience, specialization, and contributions to the team]
-                </p>
-                <div className="flex items-center gap-2 text-sm">
-                  <FontAwesomeIcon icon={faEnvelope} className="text-usc-red" />
-                  <a href="mailto:[email]" className="text-usc-red hover:underline">[email@usc.edu]</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Senior Member 2 */}
-            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="bg-gray-100 border-b border-gray-200 p-6 text-center min-h-[200px] flex flex-col justify-center">
-                <div className="text-gray-400 mb-4">
-                  <svg className="w-20 h-20 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-500">Senior Member Photo</p>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-usc-red mb-2">[Senior Member Name]</h3>
-                <p className="text-gray-600 mb-3">Senior • [Major]</p>
-                <div className="flex items-center gap-2 mb-3">
-                  <FontAwesomeIcon icon={faTrophy} className="text-usc-yellow" />
-                  <span className="text-sm text-gray-600">[Achievement/Award]</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-4">
-                  [Brief description of debate experience, specialization, and contributions to the team]
-                </p>
-                <div className="flex items-center gap-2 text-sm">
-                  <FontAwesomeIcon icon={faEnvelope} className="text-usc-red" />
-                  <a href="mailto:[email]" className="text-usc-red hover:underline">[email@usc.edu]</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Senior Member 3 */}
-            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="bg-gray-100 border-b border-gray-200 p-6 text-center min-h-[200px] flex flex-col justify-center">
-                <div className="text-gray-400 mb-4">
-                  <svg className="w-20 h-20 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-sm text-gray-500">Senior Member Photo</p>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-usc-red mb-2">[Senior Member Name]</h3>
-                <p className="text-gray-600 mb-3">Senior • [Major]</p>
-                <div className="flex items-center gap-2 mb-3">
-                  <FontAwesomeIcon icon={faTrophy} className="text-usc-yellow" />
-                  <span className="text-sm text-gray-600">[Achievement/Award]</span>
-                </div>
-                <p className="text-sm text-gray-700 mb-4">
-                  [Brief description of debate experience, specialization, and contributions to the team]
-                </p>
-                <div className="flex items-center gap-2 text-sm">
-                  <FontAwesomeIcon icon={faEnvelope} className="text-usc-red" />
-                  <a href="mailto:[email]" className="text-usc-red hover:underline">[email@usc.edu]</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Junior Members */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-caslon text-usc-red text-center mb-12">Junior Members</h2>
+          <h2 className="text-3xl font-caslon text-usc-red text-center mb-12">Team Members</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Junior Members - Placeholder Grid */}
-            {[...Array(8)].map((_, index) => (
+            {/* Member Cards - Combine all here */}
+            {[...Array(11)].map((_, index) => (
               <div key={index} className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="bg-gray-100 border-b border-gray-200 p-4 text-center min-h-[120px] flex flex-col justify-center">
-                  <div className="text-gray-400 mb-2">
-                    <svg className="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                <div className="bg-gray-100 border-b border-gray-200 p-6 text-center min-h-[160px] flex flex-col justify-center">
+                  <div className="text-gray-400 mb-4">
+                    <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -169,9 +82,11 @@ export default function TeamMembers() {
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-usc-red mb-1">[Member Name]</h3>
                   <p className="text-sm text-gray-600 mb-2">[Year] • [Major]</p>
-                  <p className="text-xs text-gray-700 mb-3">
-                    [Brief description of debate focus and interests]
-                  </p>
+                  <div className="flex items-center gap-2 mb-2">
+                    <FontAwesomeIcon icon={faTrophy} className="text-usc-yellow" />
+                    <span className="text-xs text-gray-600">[Achievement/Award]</span>
+                  </div>
+                  <p className="text-xs text-gray-700 mb-3">[Brief description of debate experience, focus, and interests]</p>
                   <div className="flex items-center gap-2 text-xs">
                     <FontAwesomeIcon icon={faEnvelope} className="text-usc-red" />
                     <a href="mailto:[email]" className="text-usc-red hover:underline">[email]</a>
@@ -179,60 +94,6 @@ export default function TeamMembers() {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* Team Leadership */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-caslon text-usc-red text-center mb-12">Team Leadership</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Team Captain */}
-            <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
-              <div className="flex items-start gap-6">
-                <div className="bg-white bg-opacity-20 rounded-lg p-4 text-center min-w-[100px] min-h-[100px] flex flex-col justify-center">
-                  <div className="text-white opacity-80">
-                    <svg className="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold mb-2">[Team Captain Name]</h3>
-                  <p className="text-usc-yellow font-medium mb-3">Team Captain</p>
-                  <p className="text-white opacity-90 mb-4">
-                    [Description of captain&apos;s role, leadership style, and vision for the team]
-                  </p>
-                  <div className="flex items-center gap-2 text-sm">
-                    <FontAwesomeIcon icon={faEnvelope} className="text-usc-yellow" />
-                    <a href="mailto:[email]" className="text-usc-yellow hover:underline">[email@usc.edu]</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Vice Captain */}
-            <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
-              <div className="flex items-start gap-6">
-                <div className="bg-white bg-opacity-20 rounded-lg p-4 text-center min-w-[100px] min-h-[100px] flex flex-col justify-center">
-                  <div className="text-white opacity-80">
-                    <svg className="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold mb-2">[Vice Captain Name]</h3>
-                  <p className="text-usc-yellow font-medium mb-3">Vice Captain</p>
-                  <p className="text-white opacity-90 mb-4">
-                    [Description of vice captain&apos;s role, responsibilities, and contributions]
-                  </p>
-                  <div className="flex items-center gap-2 text-sm">
-                    <FontAwesomeIcon icon={faEnvelope} className="text-usc-yellow" />
-                    <a href="mailto:[email]" className="text-usc-yellow hover:underline">[email@usc.edu]</a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 

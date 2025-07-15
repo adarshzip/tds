@@ -5,7 +5,7 @@ import { faArrowRight, faTrophy, faUsers, faGraduationCap, faHandshake } from "@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: 'Home | USC Trojan Debate Squad',
   description: 'Home of the championship-winning USC Trojan Debate Squad, hosted by the USC Annenberg School of Communications. Join our 144-year tradition of excellence in policy debate.',
 }
 
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="bg-white">
       {/* Hero Section */}
-      <div className="bg-no-repeat bg-cover bg-center bg-fixed bg-campus1 flex h-[100vh] relative">
+      <div className="bg-no-repeat bg-cover bg-center md:bg-fixed bg-campus1 flex h-screen relative">
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="relative z-10 flex pt-11 px-8 flex-col justify-center items-center text-center md:items-start md:text-left">
           <h2 className="text-white font-semibold text-4xl md:text-5xl rounded-md sm:px-1 mb-4">
@@ -95,7 +95,7 @@ export default function Home() {
               </Link>
               <p className="text-black mb-4">
                         Whether you&apos;re an incoming student, current Trojan, or even an interested high schooler,
-        we&apos;re always excited to have new members on the team. No experience required!
+        we&apos;re always excited to have new members on the team.
               </p>
               <Link href="/prospects" className="text-usc-red hover:underline flex items-center gap-2">
                 Get Started <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
@@ -152,22 +152,6 @@ export default function Home() {
 
             <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
               <div className="text-usc-red mb-4">
-                <FontAwesomeIcon icon={faTrophy} className="text-4xl" />
-              </div>
-              <Link href="/digital-debate" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
-                Digital Debate
-              </Link>
-              <p className="text-black mb-4">
-                Explore our innovative Trojan Web Debates platform and digital debate 
-                initiatives that bring competitive debate to participants worldwide.
-              </p>
-              <Link href="/digital-debate" className="text-usc-red hover:underline flex items-center gap-2">
-                Learn More <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
-              </Link>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="text-usc-red mb-4">
                 <FontAwesomeIcon icon={faGraduationCap} className="text-4xl" />
               </div>
               <Link href="/high-school" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
@@ -179,35 +163,6 @@ export default function Home() {
               </p>
               <Link href="/high-school" className="text-usc-red hover:underline flex items-center gap-2">
                 Explore Programs <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
-              </Link>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="text-usc-red mb-4">
-                <FontAwesomeIcon icon={faHandshake} className="text-4xl" />
-              </div>
-              <Link href="/public-debate" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
-                Public Debate
-              </Link>
-              <p className="text-black mb-4">
-                Experience the power of civil discourse through our public debate events, 
-                community forums, and educational workshops.
-              </p>
-              <Link href="/public-debate" className="text-usc-red hover:underline flex items-center gap-2">
-                Join Events <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
-              </Link>
-            </div>
-
-            <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
-              <h3 className="text-2xl font-caslon mb-4">Ready to Join?</h3>
-              <p className="mb-6">
-                Start your debate journey today and become part of our championship-winning tradition.
-              </p>
-              <Link 
-                href="/prospects" 
-                className="bg-usc-yellow text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors inline-block"
-              >
-                Join the Team
               </Link>
             </div>
           </div>
