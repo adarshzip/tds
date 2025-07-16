@@ -107,7 +107,7 @@ export default function About() {
                                 <p className="text-gray-700 leading-relaxed">[Bio placeholder] Nate Martin specializes in evidence analysis and research methodology, helping students develop strong argumentative foundations. Add detailed bio information here including background, achievements, and coaching philosophy.</p>
                             </div>
                         </div>
-                        {/* LeBron James */}
+                        {/* Ari Davidson */}
                         <div className="flex flex-col md:flex-row gap-6 items-start bg-gray-50 rounded-lg p-6">
                             <div className="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <div className="text-gray-400 text-center">
@@ -118,8 +118,23 @@ export default function About() {
                                 </div>
                             </div>
                             <div className="flex-1">
+                                <h3 className="text-usc-red text-xl mb-3">Ari Davidson</h3>
+                                <p className="text-gray-700 leading-relaxed">[Bio placeholder] Ari Davidson focuses on public speaking and presentation skills, helping students develop confidence and effective communication techniques. Add detailed bio information here including background, achievements, and coaching philosophy.</p>
+                            </div>
+                        </div>
+                        {/* LEBRONNNNN */}
+                        <div className="flex flex-col md:flex-row-reverse gap-6 items-start bg-gray-50 rounded-lg p-6">
+                            <div className="w-40 h-40 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <div className="text-gray-400 text-center">
+                                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                    </svg>
+                                    <p className="text-sm">Headshot</p>
+                                </div>
+                            </div>
+                            <div className="flex-1">
                                 <h3 className="text-usc-red text-xl mb-3">LeBron James</h3>
-                                <p className="text-gray-700 leading-relaxed">[Bio placeholder] LeBron James focuses on public speaking and presentation skills, helping students develop confidence and effective communication techniques. Add detailed bio information here including background, achievements, and coaching philosophy.</p>
+                                <p className="text-gray-700 leading-relaxed">[Bio placeholder] LeBron James is a coach for the USC Trojan Debate Squad. Add detailed bio information here including background, achievements, and coaching philosophy.</p>
                             </div>
                         </div>
                     </div>
