@@ -68,29 +68,21 @@ export default function TeamMembers() {
         <section className="mb-16">
           <h2 className="text-3xl font-caslon text-usc-red text-center mb-12">Team Members</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Member Cards - Combine all here */}
+            {/* Member Cards - Simplified: Only Name, Year, Major */}
             {[...Array(11)].map((_, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="bg-gray-100 border-b border-gray-200 p-6 text-center min-h-[160px] flex flex-col justify-center">
-                  <div className="text-gray-400 mb-4">
-                    <svg className="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-xs text-gray-500">Member Photo</p>
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow duration-200 flex flex-col items-stretch"
+              >
+                {/* Rectangular headshot placeholder */}
+                <div className="w-full h-32 bg-gray-200 flex items-center justify-center overflow-hidden">
+                  <svg className="w-16 h-16 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                  </svg>
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-usc-red mb-1">[Member Name]</h3>
-                  <p className="text-sm text-gray-600 mb-2">[Year] • [Major]</p>
-                  <div className="flex items-center gap-2 mb-2">
-                    <FontAwesomeIcon icon={faTrophy} className="text-usc-yellow" />
-                    <span className="text-xs text-gray-600">[Achievement/Award]</span>
-                  </div>
-                  <p className="text-xs text-gray-700 mb-3">[Brief description of debate experience, focus, and interests]</p>
-                  <div className="flex items-center gap-2 text-xs">
-                    <FontAwesomeIcon icon={faEnvelope} className="text-usc-red" />
-                    <a href="mailto:[email]" className="text-usc-red hover:underline">[email]</a>
-                  </div>
+                <div className="flex flex-col items-center px-6 py-6">
+                  <h3 className="text-lg font-semibold text-usc-red mb-1 text-center">[Member Name]</h3>
+                  <p className="text-sm text-gray-600 text-center">[Year] • [Major]</p>
                 </div>
               </div>
             ))}

@@ -67,9 +67,17 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden sm:flex space-x-4">
-                        <Link href="/about" className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" onClick={closeMenu}>
-                            About
-                        </Link>
+                        {/* About Dropdown */}
+                        <div className="relative group pr-4">
+                            <Link href="/about" className="flex items-center text-lg text-white hover:text-usc-yellow focus:outline-none transition duration-150 ease-in" tabIndex={0} onClick={closeMenu}>
+                                About
+                                <FontAwesomeIcon icon={faChevronDown} className="ml-1 text-xs" />
+                            </Link>
+                            <div className="absolute left-0 mt-2 w-40 rounded shadow-lg bg-usc-red opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity z-50">
+                                <Link href="/about/team" className="block px-4 py-2 text-white hover:bg-usc-yellow hover:text-black rounded-t transition-colors" onClick={closeMenu}>Team</Link>
+                                <Link href="/about/archives" className="block px-4 py-2 text-white hover:bg-usc-yellow hover:text-black rounded-b transition-colors" onClick={closeMenu}>Archives</Link>
+                            </div>
+                        </div>
                         <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/prospects" onClick={closeMenu}>
                             Prospects
                         </Link>
@@ -114,13 +122,17 @@ export default function Header() {
                 {isMenuOpen && (
                     <div className="absolute top-16 left-0 right-0 bg-usc-red shadow-lg z-50 sm:hidden">
                         <nav className="flex flex-col py-4">
-                            <Link 
-                                href="/about" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                About
-                            </Link>
+                            {/* About Dropdown Mobile */}
+                            <details className="px-6" open={false}>
+                                <summary className="py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none flex items-center cursor-pointer select-none">
+                                    About
+                                    <FontAwesomeIcon icon={faChevronDown} className="ml-1 text-xs" />
+                                </summary>
+                                <div className="flex flex-col bg-red-900 rounded-b">
+                                    <Link href="/about/team" className="px-4 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors rounded-t" onClick={closeMenu}>Team</Link>
+                                    <Link href="/about/archives" className="px-4 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors rounded-b" onClick={closeMenu}>Archives</Link>
+                                </div>
+                            </details>
                             <Link 
                                 href="/prospects" 
                                 className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
