@@ -127,17 +127,20 @@ export default function Header() {
                 {isMenuOpen && (
                     <div className="absolute top-16 left-0 right-0 bg-usc-red shadow-lg z-50 sm:hidden">
                         <nav className="flex flex-col py-4">
-                            {/* About Dropdown Mobile */}
-                            <details className="px-6" open={false}>
-                                <summary className="py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none flex items-center cursor-pointer select-none">
-                                    About
-                                    <FontAwesomeIcon icon={faChevronDown} className="ml-1 text-xs" />
-                                </summary>
-                                <div className="flex flex-col bg-red-900 rounded-b">
-                                    <Link href="/about/team" className="px-4 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors rounded-t" onClick={closeMenu}>Team</Link>
-                                    <Link href="/about/archives" className="px-4 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors rounded-b" onClick={closeMenu}>Archives</Link>
-                                </div>
-                            </details>
+                            {/* About with indented subpages for Mobile */}
+                            <div>
+                              <Link 
+                                  href="/about" 
+                                  className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none block"
+                                  onClick={closeMenu}
+                              >
+                                  About
+                              </Link>
+                              <div className="ml-6 bg-red-900/80 rounded-b-md">
+                                <Link href="/about/team" className="block px-6 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors" onClick={closeMenu}>Team</Link>
+                                <Link href="/about/archives" className="block px-6 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors" onClick={closeMenu}>Archives</Link>
+                              </div>
+                            </div>
                             <Link 
                                 href="/prospects" 
                                 className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
