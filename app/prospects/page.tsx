@@ -28,7 +28,7 @@ export default function Prospects() {
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-caslon mb-6">Join the USC Trojan Debate Squad</h1>
           <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto">
-            Whether you&apos;re an incoming student, current Trojan, or interested high schooler, we&apos;re always excited to welcome new members to our championship-winning <strong>USC Debate Team</strong>.
+            Whether you&apos;re an incoming student, current Trojan, or interested high schooler, we&apos;re always excited to welcome new members to the championship-winning <strong>USC Debate Team</strong>.
           </p>
         </div>
       </div>

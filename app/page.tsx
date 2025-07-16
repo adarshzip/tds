@@ -20,7 +20,7 @@ export default function Home() {
             145 years of success.
           </h2>
           <h2 className="text-white font-semibold text-4xl md:text-5xl rounded-md sm:px-1 bg-usc-red bg-opacity-90 p-2 mb-8">
-            Join the <span className="text-usc-yellow">USC Trojan Debate Squad</span> — the official <strong>USC Debate Team</strong>.
+            Join the <span className="text-usc-yellow">USC Trojan Debate Squad</span>.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
