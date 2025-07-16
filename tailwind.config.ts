@@ -11,7 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'campus1': "url('/static/images/Campus1111.png')",
+        'campus1': "url('/static/images/Campus1111-optimized.jpg')",
         'newAnnenberg': "url('/static/images/newAnnenberg.jpg')",
       },
       fontFamily: {
