@@ -4,8 +4,8 @@ import { faArrowRight, faGraduationCap, faUsers, faHandshake, faLightbulb } from
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata: Metadata = {
-  title: 'Community Outreach',
-  description: 'Learn about USC Trojan Debate Squad\'s efforts to expand access to debate throughout Los Angeles through educational programs and community partnerships.',
+  title: 'Community Outreach | USC Trojan Debate Squad | USC Debate Team',
+  description: 'Learn about the USC Trojan Debate Squad’s 145-year tradition of expanding access to debate throughout Los Angeles. Discover our educational programs, community partnerships, and the impact of the official USC Debate Team.',
 }
 
 export default function Outreach() {

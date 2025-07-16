@@ -4,8 +4,8 @@ import { faArrowRight, faGift, faHeart, faTrophy, faGraduationCap, faUsers } fro
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata: Metadata = {
-  title: 'Support the Team',
-  description: 'Support the USC Trojan Debate Squad through your generous donations. Help us continue our championship-winning tradition and expand debate access throughout Los Angeles.',
+  title: 'Support the USC Trojan Debate Squad | USC Debate Team',
+  description: 'Support the USC Trojan Debate Squad, the official USC Debate Team, through your generous donations. Help us continue our 145-year championship-winning tradition and expand debate access throughout Los Angeles.',
 }
 
 export default function Donate() {
@@ -14,10 +14,9 @@ export default function Donate() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-usc-red to-red-800 text-white py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-caslon mb-6">Support the Trojan Debate Squad</h1>
+          <h1 className="text-5xl md:text-6xl font-caslon mb-6">Support the USC Trojan Debate Squad</h1>
           <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto">
-            Your generous support helps us maintain our championship-winning tradition 
-            and expand debate access throughout Los Angeles
+            Your generous support helps the <strong>USC Debate Team</strong> maintain our 145-year championship-winning tradition and expand debate access throughout Los Angeles.
           </p>
         </div>
       </div>

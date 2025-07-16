@@ -5,8 +5,8 @@ import { faInstagram as faInstagramBrand, faTwitter as faTwitterBrand, faLinkedi
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with the USC Trojan Debate Squad. Contact our coaches, visit our office, or reach out through social media.',
+  title: 'Contact the USC Trojan Debate Squad | USC Debate Team',
+  description: 'Get in touch with the USC Trojan Debate Squad, the official USC Debate Team. Contact our coaches, visit our office, or reach out through social media. Join our 145-year tradition of debate excellence.',
 }
 
 export default function Contact() {
@@ -15,10 +15,9 @@ export default function Contact() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-usc-red to-red-800 text-white py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-caslon mb-6">Contact Us</h1>
+          <h1 className="text-5xl md:text-6xl font-caslon mb-6">Contact the USC Trojan Debate Squad</h1>
           <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto">
-            Get in touch with the Trojan Debate Squad. We&apos;re here to answer your questions 
-            and help you get involved.
+            Get in touch with the <strong>USC Debate Team</strong>. We&apos;re here to answer your questions and help you get involved with the Trojan Debate Squad.
           </p>
         </div>
       </div>

@@ -4,8 +4,8 @@ import { faArrowLeft, faEnvelope, faGraduationCap, faTrophy, faUsers } from "@fo
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata: Metadata = {
-  title: 'Current Team Members',
-  description: 'Meet the current members of the USC Trojan Debate Squad. Learn about our talented debaters, their achievements, and academic backgrounds.',
+  title: 'Current Team Members | USC Trojan Debate Squad | USC Debate Team',
+  description: 'Meet the current members of the USC Trojan Debate Squad, the official USC Debate Team. Learn about our talented debaters, their achievements, and our 145-year tradition of excellence.',
 }
 
 export default function TeamMembers() {

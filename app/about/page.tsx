@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: 'About',
+    title: 'About | USC Trojan Debate Squad | USC Debate Team',
+    description: 'Learn about the 145-year tradition of the USC Trojan Debate Squad, the official USC Debate Team. Discover our history, mission, and impact in collegiate policy debate.',
 }
 
 export default function About() {
@@ -11,12 +12,12 @@ export default function About() {
             {/* Hero Section */}
             <div className="bg-gradient-to-r from-usc-red to-red-800 text-white py-20 px-6">
                 <div className="max-w-6xl mx-auto text-center">
-                    <h1 className="text-5xl md:text-6xl font-caslon mb-6">About the Trojan Debate Squad</h1>
+                    <h1 className="text-5xl md:text-6xl font-caslon mb-6">About the USC Trojan Debate Squad</h1>
                     <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto mb-4">
-                        The TDS has represented excellence in policy debate since 1880 as USC&apos;s first chartered student organization.
+                        The USC Trojan Debate Squad (TDS) has represented excellence in policy debate since 1880 as USC&apos;s first chartered student organization. For 145 years, the <strong>USC Debate Team</strong> has set the standard for collegiate debate.
                     </p>
                     <p className="text-lg md:text-xl font-source_sans max-w-3xl mx-auto opacity-90">
-                        The Trojan Debate Squad is USC&apos;s official policy debate team, competing nationally in NDT/CEDA tournaments and expanding debate access in Los Angeles public schools. The squad is committed to academic excellence, innovation, and community outreach.
+                        The USC Trojan Debate Squad is USC&apos;s official policy debate team, competing nationally in NDT/CEDA tournaments and expanding debate access in Los Angeles public schools. The squad is committed to academic excellence, innovation, and community outreach.
                     </p>
                 </div>
             </div>

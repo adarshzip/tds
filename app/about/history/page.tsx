@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export const metadata: Metadata = {
-    title: 'About',
-  }
+    title: 'History | USC Trojan Debate Squad | USC Debate Team',
+    description: 'Explore the 145-year history of the USC Trojan Debate Squad, the official USC Debate Team. Learn about our legacy, milestones, and impact on collegiate debate since 1880.',
+}
   
 export default function History() {
     return (

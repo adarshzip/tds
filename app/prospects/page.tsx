@@ -4,8 +4,20 @@ import { faArrowRight, faCalendarAlt, faMapMarkerAlt, faEnvelope, faPhone, faFil
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata: Metadata = {
-  title: 'Join the Team',
-  description: 'Join the USC Trojan Debate Squad - Learn about requirements, practice schedule, and how to get involved with our championship-winning debate team.',
+  title: 'Join the USC Trojan Debate Squad | USC Debate Team',
+  description: 'Interested in joining the USC Debate Team? Learn how to become part of the USC Trojan Debate Squad, see our practice schedule, and discover what makes us a top collegiate debate program.',
+  openGraph: {
+    title: 'Join the USC Trojan Debate Squad | USC Debate Team',
+    description: 'Interested in joining the USC Debate Team? Learn how to become part of the USC Trojan Debate Squad, see our practice schedule, and discover what makes us a top collegiate debate program.',
+    url: 'https://[YOUR_DOMAIN]/prospects',
+    siteName: 'USC Trojan Debate Squad',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Join the USC Trojan Debate Squad | USC Debate Team',
+    description: 'Interested in joining the USC Debate Team? Learn how to become part of the USC Trojan Debate Squad, see our practice schedule, and discover what makes us a top collegiate debate program.',
+  },
 }
 
 export default function Prospects() {
@@ -14,10 +26,9 @@ export default function Prospects() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-usc-red to-red-800 text-white py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-caslon mb-6">Join the Trojan Debate Squad</h1>
+          <h1 className="text-5xl md:text-6xl font-caslon mb-6">Join the USC Trojan Debate Squad</h1>
           <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto">
-                    Whether you&apos;re an incoming student, current Trojan, or interested high schooler,
-        we&apos;re always excited to welcome new members to our championship-winning team.
+            Whether you&apos;re an incoming student, current Trojan, or interested high schooler, we&apos;re always excited to welcome new members to our championship-winning <strong>USC Debate Team</strong>.
           </p>
         </div>
       </div>
@@ -40,12 +51,10 @@ export default function Prospects() {
               <h3 className="text-2xl font-caslon mb-6">Recruitment Blurb</h3>
               <div className="bg-white bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-white border-opacity-30">
                 <p className="text-lg italic">
-                  [Placeholder for compelling recruitment message about why students should join the Trojan Debate Squad. 
-                  This section should highlight the unique opportunities, benefits, and experiences that make TDS special.]
+                  The <strong>USC Trojan Debate Squad</strong> is the official <strong>USC Debate Team</strong>—a community of passionate students dedicated to excellence in policy debate. Join us to develop your public speaking, critical thinking, and research skills while representing USC at regional and national tournaments. Experience the tradition, camaraderie, and success that make the <strong>USC Debate</strong> program unique!
                 </p>
                 <p className="text-sm mt-4 opacity-90">
-                  Add your recruitment blurb here to inspire potential team members and showcase what makes 
-                  the Trojan Debate Squad an exceptional opportunity for personal and academic growth.
+                  Ready to take your place on the <strong>USC Debate Team</strong>? Discover what makes the <strong>USC Trojan Debate Squad</strong> an exceptional opportunity for personal and academic growth.
                 </p>
               </div>
             </div>
@@ -139,7 +148,7 @@ export default function Prospects() {
             </section>
 
             <section>
-              <h2 className="text-3xl font-caslon text-usc-red mb-6">How to Get Started</h2>
+              <h2 className="text-3xl font-caslon text-usc-red mb-6">How to Get Started (Current Students)</h2>
               <div className="space-y-4">
                 <div className="bg-usc-red text-white p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 1: Express Interest</h3>
@@ -208,7 +217,7 @@ export default function Prospects() {
 
         {/* Contact Information for Future Recruits */}
         <section className="mt-16">
-          <h2 className="text-4xl font-caslon text-usc-red text-center mb-8">Contact Information for Future Recruits</h2>
+          <h2 className="text-4xl font-caslon text-usc-red text-center mb-8">Interested High Schoolers</h2>
           <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
             <div className="max-w-4xl mx-auto">
               <h3 className="text-2xl font-caslon text-center mb-6">Get in Touch</h3>

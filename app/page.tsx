@@ -5,8 +5,8 @@ import { faArrowRight, faTrophy, faUsers, faGraduationCap, faHandshake } from "@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const metadata: Metadata = {
-  title: 'Home | USC Trojan Debate Squad',
-  description: 'Home of the championship-winning USC Trojan Debate Squad, hosted by the USC Annenberg School of Communications. Join our 144-year tradition of excellence in policy debate.',
+  title: 'Home | USC Trojan Debate Squad | USC Debate Team',
+  description: 'Home of the championship-winning USC Trojan Debate Squad, hosted by the USC Annenberg School of Communications. Join our 145-year tradition of excellence in policy debate as part of the official USC Debate Team.',
 }
 
 export default function Home() {
@@ -17,10 +17,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="relative z-10 flex pt-11 px-8 flex-col justify-center items-center text-center md:items-start md:text-left">
           <h2 className="text-white font-semibold text-4xl md:text-5xl rounded-md sm:px-1 mb-4">
-            144 years of success.
+            145 years of success.
           </h2>
           <h2 className="text-white font-semibold text-4xl md:text-5xl rounded-md sm:px-1 bg-usc-red bg-opacity-90 p-2 mb-8">
-            Join the <span className="text-usc-yellow">Trojan Debate Squad</span>.
+            Join the <span className="text-usc-yellow">USC Trojan Debate Squad</span> — the official <strong>USC Debate Team</strong>.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 

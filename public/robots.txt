@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://uscdebate.com/sitemap.xml 
