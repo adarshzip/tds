@@ -12,7 +12,9 @@ export default function Footer() {
             <nav className="w-full flex flex-col items-center">
                 <div className="flex flex-row flex-wrap justify-center gap-x-8 gap-y-2 text-center mb-6">
                     <Link href="/" className="text-white hover:text-usc-yellow transition">Home</Link>
-                    <Link href="/about" className="text-white hover:text-usc-yellow transition">About the Team</Link>
+                    <Link href="/about" className="text-white hover:text-usc-yellow transition">Coaches</Link>
+                    <Link href="/about/team" className="text-white hover:text-usc-yellow transition">Team</Link>
+                    <Link href="/about/archives" className="text-white hover:text-usc-yellow transition">Archives</Link>
                     <Link href="/recruiting" className="text-white hover:text-usc-yellow transition">Join the Team</Link>
                     {false && (
                         <>

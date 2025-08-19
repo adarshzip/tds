@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faBars as faBarsSolid, faTimes as faTimesSolid, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars as faBarsSolid, faTimes as faTimesSolid } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+
     const pathname = usePathname();
     const isHome = pathname === '/';
     // Change headerVisible to always default to true
@@ -63,21 +63,15 @@ export default function Header() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden sm:flex space-x-4">
-                        {/* About Dropdown - now controlled by state */}
-                        <div
-                          className="relative pr-4"
-                          onMouseEnter={() => setIsAboutDropdownOpen(true)}
-                          onMouseLeave={() => setIsAboutDropdownOpen(false)}
-                        >
-                            <Link href="/about" className="flex items-center text-lg text-white hover:text-usc-yellow focus:outline-none transition duration-150 ease-in" onClick={closeMenu}>
-                                About
-                                <FontAwesomeIcon icon={faChevronDown} className="ml-1 text-xs" />
-                            </Link>
-                            <div className={`absolute left-0 top-full w-40 rounded shadow-lg bg-usc-red transition-opacity z-50 ${isAboutDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-                                <Link href="/about/team" className="block px-4 py-2 text-white hover:bg-usc-yellow hover:text-black rounded-t transition-colors" onClick={() => { setIsAboutDropdownOpen(false); closeMenu(); }}>Team</Link>
-                                <Link href="/about/archives" className="block px-4 py-2 text-white hover:bg-usc-yellow hover:text-black rounded-b transition-colors" onClick={() => { setIsAboutDropdownOpen(false); closeMenu(); }}>Archives</Link>
-                            </div>
-                        </div>
+                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/about" onClick={closeMenu}>
+                            Coaches
+                        </Link>
+                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/about/team" onClick={closeMenu}>
+                            Team
+                        </Link>
+                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/about/archives" onClick={closeMenu}>
+                            Archives
+                        </Link>
                         <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/recruiting" onClick={closeMenu}>
                             Recruiting
                         </Link>
@@ -128,20 +122,27 @@ export default function Header() {
                 {isMenuOpen && (
                     <div className="absolute top-16 left-0 right-0 bg-usc-red shadow-lg z-50 sm:hidden">
                         <nav className="flex flex-col py-4">
-                            {/* About with indented subpages for Mobile */}
-                            <div>
-                              <Link 
-                                  href="/about" 
-                                  className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none block"
-                                  onClick={closeMenu}
-                              >
-                                  About
-                              </Link>
-                              <div className="ml-6 bg-red-900/80 rounded-b-md">
-                                <Link href="/about/team" className="block px-6 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors" onClick={closeMenu}>Team</Link>
-                                <Link href="/about/archives" className="block px-6 py-2 text-white hover:bg-usc-yellow hover:text-black transition-colors" onClick={closeMenu}>Archives</Link>
-                              </div>
-                            </div>
+                            <Link 
+                                href="/about" 
+                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                onClick={closeMenu}
+                            >
+                                Coaches
+                            </Link>
+                            <Link 
+                                href="/about/team" 
+                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                onClick={closeMenu}
+                            >
+                                Team
+                            </Link>
+                            <Link 
+                                href="/about/archives" 
+                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                onClick={closeMenu}
+                            >
+                                Archives
+                            </Link>
                             <Link 
                                 href="/recruiting" 
                                 className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
