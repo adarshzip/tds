@@ -51,7 +51,7 @@ export default function Recruiting() {
               <h3 className="text-2xl font-caslon mb-6">Recruitment Blurb</h3>
               <div className="bg-white bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-white border-opacity-30">
                 <p className="text-lg italic">
-                The USC Trojan Debate Squad is USC's first chartered student organization devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation's leading collegiate debate programs. Join us to develop your public speaking, critical thinking, and research skills while representing USC at regional and national tournaments.                
+                The USC Trojan Debate Squad is USC&apos;s first chartered student organization devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation&apos;s leading collegiate debate programs. Join us to develop your public speaking, critical thinking, and research skills while representing USC at regional and national tournaments.                
                 </p>
               </div>
             </div>
