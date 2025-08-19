@@ -24,7 +24,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
-              href="/prospects" 
+              href="/recruiting" 
               className="bg-usc-yellow text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors text-center"
             >
               Join the Team
@@ -90,81 +90,89 @@ export default function Home() {
               <div className="text-usc-red mb-4">
                 <FontAwesomeIcon icon={faGraduationCap} className="text-4xl" />
               </div>
-              <Link href='/prospects' className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
+              <Link href='/recruiting' className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
                 Join Us
               </Link>
               <p className="text-black mb-4">
                         Whether you&apos;re an incoming student, current Trojan, or even an interested high schooler,
         we&apos;re always excited to have new members on the team.
               </p>
-              <Link href="/prospects" className="text-usc-red hover:underline flex items-center gap-2">
+              <Link href="/recruiting" className="text-usc-red hover:underline flex items-center gap-2">
                 Get Started <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
               </Link>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="text-usc-red mb-4">
-                <FontAwesomeIcon icon={faHandshake} className="text-4xl" />
+            {false && (
+              <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div className="text-usc-red mb-4">
+                  <FontAwesomeIcon icon={faHandshake} className="text-4xl" />
+                </div>
+                <Link href="/outreach" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
+                  Outreach
+                </Link>
+                <p className="text-black mb-4">
+                  Learn about our efforts to expand access to debate throughout Los Angeles through 
+                  mentorship programs, community workshops, and school partnerships.
+                </p>
+                <Link href="/outreach" className="text-usc-red hover:underline flex items-center gap-2">
+                  Discover More <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
+                </Link>
               </div>
-              <Link href="/outreach" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
-                Outreach
-              </Link>
-              <p className="text-black mb-4">
-                Learn about our efforts to expand access to debate throughout Los Angeles through 
-                mentorship programs, community workshops, and school partnerships.
-              </p>
-              <Link href="/outreach" className="text-usc-red hover:underline flex items-center gap-2">
-                Discover More <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
-              </Link>
-            </div>
+            )}
 
-            <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="text-usc-red mb-4">
-                <FontAwesomeIcon icon={faTrophy} className="text-4xl" />
+            {false && (
+              <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div className="text-usc-red mb-4">
+                  <FontAwesomeIcon icon={faTrophy} className="text-4xl" />
+                </div>
+                <Link href="/donate" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
+                  Support the Team
+                </Link>
+                <p className="text-black mb-4">
+                  We rely on the generous support of our donors and the USC Annenberg School of Communications 
+                  to fund our competitive efforts and community outreach programs.
+                </p>
+                <Link href="/donate" className="text-usc-red hover:underline flex items-center gap-2">
+                  Donate Now <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
+                </Link>
               </div>
-              <Link href="/donate" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
-                Support the Team
-              </Link>
-              <p className="text-black mb-4">
-                We rely on the generous support of our donors and the USC Annenberg School of Communications 
-                to fund our competitive efforts and community outreach programs.
-              </p>
-              <Link href="/donate" className="text-usc-red hover:underline flex items-center gap-2">
-                Donate Now <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
-              </Link>
-            </div>
+            )}
 
-            <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="text-usc-red mb-4">
-                <FontAwesomeIcon icon={faUsers} className="text-4xl" />
+            {false && (
+              <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div className="text-usc-red mb-4">
+                  <FontAwesomeIcon icon={faUsers} className="text-4xl" />
+                </div>
+                <Link href='/contact' className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
+                  Contact
+                </Link>
+                <p className="text-black mb-4">
+                  Any questions not already covered? Feel free to reach out to our coaches, 
+                  visit our office, or connect with us on social media.
+                </p>
+                <Link href="/contact" className="text-usc-red hover:underline flex items-center gap-2">
+                  Get in Touch <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
+                </Link>
               </div>
-              <Link href='/contact' className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
-                Contact
-              </Link>
-              <p className="text-black mb-4">
-                Any questions not already covered? Feel free to reach out to our coaches, 
-                visit our office, or connect with us on social media.
-              </p>
-              <Link href="/contact" className="text-usc-red hover:underline flex items-center gap-2">
-                Get in Touch <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
-              </Link>
-            </div>
+            )}
 
-            <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
-              <div className="text-usc-red mb-4">
-                <FontAwesomeIcon icon={faGraduationCap} className="text-4xl" />
+            {false && (
+              <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
+                <div className="text-usc-red mb-4">
+                  <FontAwesomeIcon icon={faGraduationCap} className="text-4xl" />
+                </div>
+                <Link href="/high-school" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
+                  High School Programs
+                </Link>
+                <p className="text-black mb-4">
+                  Discover our summer programs, tournaments, and mentorship initiatives 
+                  designed to inspire the next generation of debaters.
+                </p>
+                <Link href="/high-school" className="text-usc-red hover:underline flex items-center gap-2">
+                  Explore Programs <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
+                </Link>
               </div>
-              <Link href="/high-school" className="text-usc-red text-2xl font-caslon hover:underline block mb-4">
-                High School Programs
-              </Link>
-              <p className="text-black mb-4">
-                Discover our summer programs, tournaments, and mentorship initiatives 
-                designed to inspire the next generation of debaters.
-              </p>
-              <Link href="/high-school" className="text-usc-red hover:underline flex items-center gap-2">
-                Explore Programs <FontAwesomeIcon icon={faArrowRight} className="text-sm" />
-              </Link>
-            </div>
+            )}
           </div>
         </div>
       </div>
@@ -179,17 +187,19 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href="/prospects" 
+              href="/recruiting" 
               className="bg-usc-yellow text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
             >
               Join the Team
             </Link>
-            <Link 
-              href="/contact" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-usc-red transition-colors"
-            >
-              Contact Us
-            </Link>
+            {false && (
+              <Link 
+                href="/contact" 
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-usc-red transition-colors"
+              >
+                Contact Us
+              </Link>
+            )}
           </div>
         </div>
       </div>

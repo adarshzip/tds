@@ -9,7 +9,6 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isProgramsOpen, setIsProgramsOpen] = useState(false);
     const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
     const pathname = usePathname();
     const isHome = pathname === '/';
@@ -34,10 +33,6 @@ export default function Header() {
 
     const closeMenu = () => {
         setIsMenuOpen(false);
-    };
-
-    const togglePrograms = () => {
-        setIsProgramsOpen(!isProgramsOpen);
     };
 
     const headerBg = (isHome && atTop && headerVisible) ? 'bg-transparent' : 'bg-usc-red';
@@ -83,21 +78,27 @@ export default function Header() {
                                 <Link href="/about/archives" className="block px-4 py-2 text-white hover:bg-usc-yellow hover:text-black rounded-b transition-colors" onClick={() => { setIsAboutDropdownOpen(false); closeMenu(); }}>Archives</Link>
                             </div>
                         </div>
-                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/prospects" onClick={closeMenu}>
-                            Prospects
+                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/recruiting" onClick={closeMenu}>
+                            Recruiting
                         </Link>
-                        <Link href="/programs" className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" onClick={closeMenu}>
-                            Programs
-                        </Link>
-                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/outreach" onClick={closeMenu}>
-                            Outreach
-                        </Link>
-                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/donate" onClick={closeMenu}>
-                            Donate
-                        </Link>
-                        <Link className="transition duration-150 ease-in text-lg text-white hover:text-usc-yellow focus:outline-none" href="/contact" onClick={closeMenu}>
-                            Contact
-                        </Link>
+                        {false && (
+                            <>
+                                <Link href="/programs" className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" onClick={closeMenu}>
+                                    Programs
+                                </Link>
+                                <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/outreach" onClick={closeMenu}>
+                                    Outreach
+                                </Link>
+                                <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/donate" onClick={closeMenu}>
+                                    Donate
+                                </Link>
+                            </>
+                        )}
+                        {false && (
+                            <Link className="transition duration-150 ease-in text-lg text-white hover:text-usc-yellow focus:outline-none" href="/contact" onClick={closeMenu}>
+                                Contact
+                            </Link>
+                        )}
                     </div>
                 </nav>
 
@@ -142,40 +143,46 @@ export default function Header() {
                               </div>
                             </div>
                             <Link 
-                                href="/prospects" 
+                                href="/recruiting" 
                                 className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
                                 onClick={closeMenu}
                             >
-                                Prospects
+                                Recruiting
                             </Link>
-                            <Link 
-                                href="/programs" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                Programs
-                            </Link>
-                            <Link 
-                                href="/outreach" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                Outreach
-                            </Link>
-                            <Link 
-                                href="/donate" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                Donate
-                            </Link>
-                            <Link 
-                                href="/contact" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                Contact
-                            </Link>
+                            {false && (
+                                <>
+                                    <Link 
+                                        href="/programs" 
+                                        className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                        onClick={closeMenu}
+                                    >
+                                        Programs
+                                    </Link>
+                                    <Link 
+                                        href="/outreach" 
+                                        className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                        onClick={closeMenu}
+                                    >
+                                        Outreach
+                                    </Link>
+                                    <Link 
+                                        href="/donate" 
+                                        className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                        onClick={closeMenu}
+                                    >
+                                        Donate
+                                    </Link>
+                                </>
+                            )}
+                            {false && (
+                                <Link 
+                                    href="/contact" 
+                                    className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                                    onClick={closeMenu}
+                                >
+                                    Contact
+                                </Link>
+                            )}
                             <div className="border-t border-red-800 mt-2 pt-2">
                                 <Link 
                                     href="https://www.instagram.com/usctrojandebate/" 

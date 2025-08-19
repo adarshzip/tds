@@ -140,7 +140,7 @@ export default function TeamMembers() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href="/prospects" 
+              href="/recruiting" 
               className="bg-usc-yellow text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
             >
               Join the Team

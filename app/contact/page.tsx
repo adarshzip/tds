@@ -192,7 +192,7 @@ export default function Contact() {
               <h2 className="text-3xl font-caslon text-usc-red mb-6">Quick Links</h2>
               <div className="space-y-4">
                 <Link 
-                  href="/prospects" 
+                  href="/recruiting" 
                   className="block bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   <h3 className="font-semibold text-usc-red">Join the Team</h3>
@@ -266,7 +266,7 @@ export default function Contact() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-lg font-semibold text-usc-red mb-2">How can I join the team?</h3>
               <p className="text-gray-700 text-sm">
-                Visit our <Link href="/prospects" className="text-usc-red hover:underline">Join the Team</Link> page for detailed information about joining the Trojan Debate Squad.
+                Visit our <Link href="/recruiting" className="text-usc-red hover:underline">Join the Team</Link> page for detailed information about joining the Trojan Debate Squad.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
