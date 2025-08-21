@@ -46,16 +46,11 @@ export default function Recruiting() {
         {/* Why Join Section - Placeholder for Recruitment Blurb */}
         <section className="mb-16">
           <h2 className="text-4xl font-caslon text-usc-red text-center mb-8">Why Join the Trojan Debate Squad?</h2>
-          <div className="bg-gradient-to-r from-usc-red to-red-800 text-white p-8 rounded-lg">
-            <div className="max-w-4xl mx-auto text-center">
-              <h3 className="text-2xl font-caslon mb-6">Recruitment Blurb</h3>
-              <div className="bg-white bg-opacity-10 p-6 rounded-lg border-2 border-dashed border-white border-opacity-30">
-                <p className="text-lg italic">
-                The USC Trojan Debate Squad is USC&apos;s first chartered student organization devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation&apos;s leading collegiate debate programs. Join us to develop your public speaking, critical thinking, and research skills while representing USC at regional and national tournaments.                
-                </p>
-              </div>
-            </div>
-          </div>
+          <div className="text-center mb-12">
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            The USC Trojan Debate Squad is USC&apos;s first chartered student organization devoted to teaching argumentation and analytic thinking skills to students through academic debate. The TDS is one of the nation&apos;s leading collegiate debate programs. Join us to develop your public speaking, critical thinking, and research skills while representing USC at regional and national tournaments.                
+            </p>
+          </div>        
         </section>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -153,11 +148,15 @@ export default function Recruiting() {
                 </div>
                 <div className="bg-usc-yellow text-black p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 2: Submit Interest Form</h3>
-                  <p>The link can be found in our FAQ document, available <a href="/faq" className="underline hover:text-red-700">here</a>.</p>
+                  <p>You can fill it out <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4HOljBLr5r6Ep-kaYrBFNmYVQJPFCB6a_eiLNatRrTscyzw/viewform" className="underline hover:text-red-700">here</a>.</p>
                 </div>
                 <div className="bg-usc-red text-white p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 3: Meet with the Team</h3>
                   <p>Get to know the team and answer any questions you have.</p>
+                </div>
+                <div className="bg-usc-yellow text-black p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold mb-2">Step 4: Fill out Scholarship Form</h3>
+                  <p>After submitting your application, fill out <a href="https://forms.gle/a4EZWkg1guvtEFMm7" className="underline hover:text-red-700">this</a> form to apply for a scholarship.</p>
                 </div>
               </div>
             </section>
