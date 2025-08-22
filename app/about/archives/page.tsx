@@ -9,15 +9,17 @@ export const metadata: Metadata = {
 export default function Archives() {
   return (
     <main className="bg-white min-h-screen">
-      <div className="max-w-6xl mx-auto px-10 py-12">
-        <div className="flex text-gray-500 text-sm gap-1 mb-4">
-          <Link href="/" className="text-usc-red underline">Home</Link>
-          <span className="mx-1">/</span>
-          <Link href="/about" className="text-usc-red underline">About</Link>
-          <span className="mx-1">/</span>
-          <span className="text-gray-700">Archives</span>
+
+      <div className="bg-gradient-to-r from-usc-red to-red-800 text-white py-20 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-caslon mb-6">Archives</h1>
+          <p className="text-xl md:text-2xl font-source_sans max-w-3xl mx-auto">
+            Learn about the history of the Trojan Debate Squad. 
+          </p>
         </div>
-        <h1 className="text-usc-red text-center text-5xl mb-8">Archives</h1>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-10 py-12">
 
         {/* Who Are We Section */}
         <section className="mb-16">

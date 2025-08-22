@@ -21,16 +21,6 @@ export default function TeamMembers() {
         </div>
       </div>
 
-      {/* Breadcrumb */}
-      <div className="max-w-6xl mx-auto px-6 flex text-gray-500 text-sm py-5 gap-1">
-        <Link href="/" className="text-usc-red underline hover:text-red-700">Home</Link>
-        <FontAwesomeIcon icon={faArrowLeft} className="my-auto rotate-180" />
-        <Link href="/about" className="text-usc-red underline hover:text-red-700">About</Link>
-        <FontAwesomeIcon icon={faArrowLeft} className="my-auto rotate-180" />
-        <span className="text-gray-700">Team Members</span>
-      </div>
-      <hr className="max-w-6xl mx-auto" />
-
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-6 py-12">
         {/* Team Overview */}
