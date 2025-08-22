@@ -33,14 +33,6 @@ export default function Recruiting() {
         </div>
       </div>
 
-      {/* Breadcrumb */}
-      <div className="max-w-6xl mx-auto px-6 flex text-gray-500 text-sm py-5 gap-1">
-        <Link href="/" className="text-usc-red underline hover:text-red-700">Home</Link>
-        <FontAwesomeIcon icon={faArrowRight} className="my-auto" />
-        <span className="text-gray-700">Join the Team</span>
-      </div>
-      <hr className="max-w-6xl mx-auto" />
-
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-6 py-12">
         {/* Why Join Section - Placeholder for Recruitment Blurb */}
