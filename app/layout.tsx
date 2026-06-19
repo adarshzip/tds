@@ -61,11 +61,20 @@ export const metadata: Metadata = {
     siteName: 'USC Trojan Debate Squad',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/static/images/Campus1111-hero.jpg',
+        width: 1920,
+        height: 1017,
+        alt: 'USC campus',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "USC Trojan Debate Squad | USC Debate Team",
     description: "Join the USC Trojan Debate Squad, USC's official debate team since 1880. Compete nationally, develop public speaking and research skills, and be part of a 145-year tradition of excellence.",
+    images: ['/static/images/Campus1111-hero.jpg'],
   },
   robots: {
     index: true,
@@ -77,9 +86,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code',
   },
   icons: {
     icon: '/favicon.ico',
@@ -96,6 +102,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${source_sans.variable} ${caslon.variable} ${petrona.variable}`}>
       <head>
+        <link rel="preload" as="image" href="/static/images/Campus1111-hero.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{
@@ -123,9 +130,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <Header />
-        <main>
-          {children}
-        </main>
+        {children}
         <Analytics />
         <Footer />  
       </body>

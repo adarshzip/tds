@@ -12,193 +12,109 @@ export default function Header() {
 
     const pathname = usePathname();
     const isHome = pathname === '/';
-    // Change headerVisible to always default to true
-    const [headerVisible, setHeaderVisible] = useState(true);
     const [atTop, setAtTop] = useState(true);
 
-    // Remove the useEffect that sets up listeners to reveal the header on scroll/interact
-
-    // Track if at top of page for transparent header on homepage
     useEffect(() => {
-        if (!headerVisible) return;
         const handleScroll = () => setAtTop(window.scrollY === 0);
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // set initial
+        handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [headerVisible, pathname]);
+    }, [pathname]);
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+    const closeMenu = () => setIsMenuOpen(false);
 
-    const closeMenu = () => {
-        setIsMenuOpen(false);
-    };
-
-    const headerBg = (isHome && atTop && headerVisible) ? 'bg-transparent' : 'bg-usc-red';
-    let headerPosition = '';
-    if (headerVisible) {
-        if (isHome && atTop) {
-            headerPosition = 'absolute top-0 left-0 w-full h-16';
-        } else {
-            headerPosition = 'sticky top-0 h-16';
-        }
-    } else {
-        headerPosition = 'absolute top-0 left-0 w-full h-0 -translate-y-full pointer-events-none';
-    }
-    // Only use transition when revealing the header on the homepage
+    const headerBg = (isHome && atTop) ? 'bg-transparent' : 'bg-usc-red';
+    const headerPosition = (isHome && atTop)
+        ? 'absolute top-0 left-0 w-full h-16'
+        : 'sticky top-0 h-16';
     const transitionClass = isHome ? 'transition-all duration-500' : '';
-    return(
-        <header className={`${headerBg} flex items-center pl-4 font-light basis-full justify-between z-50 ${headerPosition} ${headerVisible ? 'translate-y-0' : ''} ${transitionClass}`}>
-            {headerVisible && <>
-                <nav className='flex justify-start flex-row items-center px-4 space-y-4 sm:space-y-0'>
-                    <div className='font-caslon tracking-tighter tracking pt-1'>
-                        <Link className='pr-0 text-3xl text-usc-yellow align-middle hover:text-yellow-300 transition-colors focus:outline-none' href='/' onClick={closeMenu}>
-                            USC
-                        </Link>
-                        <Link className="pr-6 text-3xl text-white align-middle hover:text-gray-200 transition-colors focus:outline-none" href='/' onClick={closeMenu}>
-                            Debate
-                        </Link>
-                    </div>
 
-                    {/* Desktop Navigation */}
-                    <div className="hidden sm:flex space-x-4">
-                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/about" onClick={closeMenu}>
-                            Coaches
+    const navLink = (href: string, label: string) => {
+        const active = pathname === href;
+        return (
+            <Link
+                href={href}
+                onClick={closeMenu}
+                className={`transition duration-150 ease-in text-lg focus:outline-none ${active ? 'text-usc-yellow font-semibold underline underline-offset-4' : 'text-white hover:text-usc-yellow'}`}
+            >
+                {label}
+            </Link>
+        );
+    };
+
+    return (
+        <header className={`${headerBg} flex items-center justify-between px-6 z-50 ${headerPosition} ${transitionClass}`}>
+            {/* Brand + Nav group */}
+            <div className="flex items-center gap-6">
+                {/* Brand */}
+                <Link href="/" onClick={closeMenu} className="flex items-baseline gap-0 font-caslon tracking-tighter leading-none focus:outline-none">
+                    <span className="text-3xl text-usc-yellow hover:text-yellow-300 transition-colors">USC</span>
+                    <span className="text-3xl text-white hover:text-gray-200 transition-colors">Debate</span>
+                </Link>
+
+                {/* Divider */}
+                <span className="hidden sm:block h-5 w-px bg-white/40" aria-hidden="true" />
+
+                {/* Desktop nav links */}
+                <nav className="hidden sm:flex items-center gap-6">
+                    {navLink('/', 'Home')}
+                    {navLink('/recruiting', 'Recruiting')}
+                </nav>
+            </div>
+
+            {/* Desktop: Instagram */}
+            <Link
+                href="https://www.instagram.com/usctrojandebate/"
+                aria-label="Follow us on Instagram"
+                onClick={closeMenu}
+                className="hidden sm:block text-lg text-white hover:text-usc-yellow transition duration-150 ease-in focus:outline-none"
+            >
+                <FontAwesomeIcon icon={faInstagram} />
+            </Link>
+
+            {/* Mobile: hamburger */}
+            <button
+                className="sm:hidden text-white hover:text-usc-yellow transition-colors focus:outline-none"
+                onClick={toggleMenu}
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMenuOpen}
+            >
+                <FontAwesomeIcon icon={isMenuOpen ? faTimesSolid : faBarsSolid} className="text-xl" />
+            </button>
+
+            {/* Mobile menu */}
+            {isMenuOpen && (
+                <div className="absolute top-16 left-0 right-0 bg-usc-red shadow-lg z-50 sm:hidden">
+                    <nav className="flex flex-col py-4">
+                        <Link
+                            href="/"
+                            onClick={closeMenu}
+                            className={`px-6 py-3 hover:bg-red-800 transition-colors focus:outline-none ${pathname === '/' ? 'text-usc-yellow font-semibold' : 'text-white hover:text-usc-yellow'}`}
+                        >
+                            Home
                         </Link>
-                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/about/team" onClick={closeMenu}>
-                            Team
-                        </Link>
-                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/about/archives" onClick={closeMenu}>
-                            Archives
-                        </Link>
-                        <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/recruiting" onClick={closeMenu}>
+                        <Link
+                            href="/recruiting"
+                            onClick={closeMenu}
+                            className={`px-6 py-3 hover:bg-red-800 transition-colors focus:outline-none ${pathname === '/recruiting' ? 'text-usc-yellow font-semibold' : 'text-white hover:text-usc-yellow'}`}
+                        >
                             Recruiting
                         </Link>
-                        {false && (
-                            <>
-                                <Link href="/programs" className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" onClick={closeMenu}>
-                                    Programs
-                                </Link>
-                                <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/outreach" onClick={closeMenu}>
-                                    Outreach
-                                </Link>
-                                <Link className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" href="/donate" onClick={closeMenu}>
-                                    Donate
-                                </Link>
-                            </>
-                        )}
-                        {false && (
-                            <Link className="transition duration-150 ease-in text-lg text-white hover:text-usc-yellow focus:outline-none" href="/contact" onClick={closeMenu}>
-                                Contact
-                            </Link>
-                        )}
-                    </div>
-                </nav>
-
-                {/* Desktop Social Links */}
-                <nav className="hidden sm:flex flex-row items-center justify-end pr-8 space-y-4 flex-nowrap sm:space-y-0">
-                    <Link 
-                        className="transition duration-150 ease-in pr-4 text-lg text-white hover:text-usc-yellow focus:outline-none" 
-                        href="https://www.instagram.com/usctrojandebate/"
-                        aria-label="Follow us on Instagram"
-                        onClick={closeMenu}
-                    > 
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </Link>
-                </nav>
-
-                {/* Mobile Menu Button */}
-                <button
-                    className="sm:hidden pr-4 text-white hover:text-usc-yellow transition-colors focus:outline-none"
-                    onClick={toggleMenu}
-                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    aria-expanded={isMenuOpen}
-                >
-                    <FontAwesomeIcon icon={isMenuOpen ? faTimesSolid : faBarsSolid} className="text-xl" />
-                </button>
-
-                {/* Mobile Menu */}
-                {isMenuOpen && (
-                    <div className="absolute top-16 left-0 right-0 bg-usc-red shadow-lg z-50 sm:hidden">
-                        <nav className="flex flex-col py-4">
-                            <Link 
-                                href="/about" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
+                        <div className="border-t border-red-800 mt-2 pt-2">
+                            <Link
+                                href="https://www.instagram.com/usctrojandebate/"
                                 onClick={closeMenu}
+                                aria-label="Follow us on Instagram"
+                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors flex items-center gap-2 focus:outline-none"
                             >
-                                Coaches
+                                <FontAwesomeIcon icon={faInstagram} />
+                                Follow us on Instagram
                             </Link>
-                            <Link 
-                                href="/about/team" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                Team
-                            </Link>
-                            <Link 
-                                href="/about/archives" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                Archives
-                            </Link>
-                            <Link 
-                                href="/recruiting" 
-                                className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                onClick={closeMenu}
-                            >
-                                Recruiting
-                            </Link>
-                            {false && (
-                                <>
-                                    <Link 
-                                        href="/programs" 
-                                        className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                        onClick={closeMenu}
-                                    >
-                                        Programs
-                                    </Link>
-                                    <Link 
-                                        href="/outreach" 
-                                        className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                        onClick={closeMenu}
-                                    >
-                                        Outreach
-                                    </Link>
-                                    <Link 
-                                        href="/donate" 
-                                        className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                        onClick={closeMenu}
-                                    >
-                                        Donate
-                                    </Link>
-                                </>
-                            )}
-                            {false && (
-                                <Link 
-                                    href="/contact" 
-                                    className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors focus:outline-none"
-                                    onClick={closeMenu}
-                                >
-                                    Contact
-                                </Link>
-                            )}
-                            <div className="border-t border-red-800 mt-2 pt-2">
-                                <Link 
-                                    href="https://www.instagram.com/usctrojandebate/" 
-                                    className="px-6 py-3 text-white hover:text-usc-yellow hover:bg-red-800 transition-colors flex items-center gap-2 focus:outline-none"
-                                    onClick={closeMenu}
-                                    aria-label="Follow us on Instagram"
-                                >
-                                    <FontAwesomeIcon icon={faInstagram} />
-                                    Follow us on Instagram
-                                </Link>
-                            </div>
-                        </nav>
-                    </div>
-                )}
-            </>}
+                        </div>
+                    </nav>
+                </div>
+            )}
         </header>
-    )
+    );
 }
