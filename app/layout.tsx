@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+
+const years = new Date().getFullYear() - 1880;
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import Header from "@/components/elements/Header";
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "USC Trojan Debate Squad | USC Debate Team",
-    description: "Join the USC Trojan Debate Squad, USC's official debate team since 1880. Compete nationally, develop public speaking and research skills, and be part of a 145-year tradition of excellence.",
+    description: `Join the USC Trojan Debate Squad, USC's official debate team since 1880. Compete nationally, develop public speaking and research skills, and be part of a ${years}-year tradition of excellence.`,
     url: 'https://uscdebate.com',
     siteName: 'USC Trojan Debate Squad',
     locale: 'en_US',
@@ -73,7 +75,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "USC Trojan Debate Squad | USC Debate Team",
-    description: "Join the USC Trojan Debate Squad, USC's official debate team since 1880. Compete nationally, develop public speaking and research skills, and be part of a 145-year tradition of excellence.",
+    description: `Join the USC Trojan Debate Squad, USC's official debate team since 1880. Compete nationally, develop public speaking and research skills, and be part of a ${years}-year tradition of excellence.`,
     images: ['/static/images/Campus1111-hero.jpg'],
   },
   robots: {

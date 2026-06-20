@@ -1,9 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
+const FOUNDING_YEAR = 1880;
+const years = new Date().getFullYear() - FOUNDING_YEAR;
+
 export const metadata: Metadata = {
   title: 'Home | USC Trojan Debate Squad | USC Debate Team',
-  description: 'Home of the championship-winning USC Trojan Debate Squad, hosted by the USC Annenberg School of Communications. Join our 145-year tradition of excellence in policy debate as part of the official USC Debate Team.',
+  description: `Home of the championship-winning USC Trojan Debate Squad, hosted by the USC Annenberg School of Communications. Join our ${years}-year tradition of excellence in policy debate as part of the official USC Debate Team.`,
 }
 
 export default function Home() {
@@ -14,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="relative z-10 flex pt-11 px-8 sm:px-16 flex-col justify-center items-center text-center sm:items-start sm:text-left max-w-3xl">
           <h2 className="text-white font-semibold text-3xl sm:text-4xl md:text-5xl mb-4">
-            145 years of success.
+            {years} years of success.
           </h2>
           <h2 className="text-white font-semibold text-3xl sm:text-4xl md:text-5xl bg-usc-red bg-opacity-90 p-2 mb-8">
             Join the <span className="text-usc-yellow">USC Trojan Debate Squad</span>.
