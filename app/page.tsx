@@ -12,11 +12,11 @@ export default function Home() {
       {/* Hero Section */}
       <div className="bg-no-repeat bg-cover bg-center bg-campus1 flex h-screen relative">
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div className="relative z-10 flex pt-11 px-8 flex-col justify-center items-center text-center md:items-start md:text-left">
-          <h2 className="text-white font-semibold text-4xl md:text-5xl rounded-md sm:px-1 mb-4">
+        <div className="relative z-10 flex pt-11 px-8 sm:px-16 flex-col justify-center items-center text-center sm:items-start sm:text-left max-w-3xl">
+          <h2 className="text-white font-semibold text-3xl sm:text-4xl md:text-5xl mb-4">
             145 years of success.
           </h2>
-          <h2 className="text-white font-semibold text-4xl md:text-5xl rounded-md sm:px-1 bg-usc-red bg-opacity-90 p-2 mb-8">
+          <h2 className="text-white font-semibold text-3xl sm:text-4xl md:text-5xl bg-usc-red bg-opacity-90 p-2 mb-8">
             Join the <span className="text-usc-yellow">USC Trojan Debate Squad</span>.
           </h2>
           <Link
