@@ -133,19 +133,22 @@ export default function Recruiting() {
               <div className="space-y-4">
                 <div className="bg-usc-red text-white p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 1: Read our FAQ Page</h3>
-                  <p>You can download it <a href="/faq" className="text-white underline hover:text-usc-yellow">here</a>.</p>
+                  <p>This link needs to be updated! Please check back later this year.</p>
+                  <p className="hidden">You can download it <a href="/404" className="text-white underline hover:text-usc-yellow">here</a>.</p>
                 </div>
                 <div className="bg-usc-yellow text-black p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 2: Submit Interest Form</h3>
-                  <p>You can fill it out <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4HOljBLr5r6Ep-kaYrBFNmYVQJPFCB6a_eiLNatRrTscyzw/viewform" className="underline hover:text-red-700">here</a>.</p>
+                  <p>This link needs to be updated! Please check back later this year.</p>
+                  <p className="hidden">You can fill it out <a href="/404" className="underline hover:text-red-700">here</a>.</p>
                 </div>
                 <div className="bg-usc-red text-white p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Step 3: Meet with the Team</h3>
-                  <p>Get to know the team and answer any questions you have.</p>
+                  <h3 className="text-xl font-semibold mb-2">Step 3: Reach Out (Optional)</h3>
+                  <p>Contact a team member or coach to ask any questions you have about the team.</p>
                 </div>
                 <div className="bg-usc-yellow text-black p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Step 4: Fill out Scholarship Form</h3>
-                  <p>After submitting your application, fill out <a href="https://forms.gle/a4EZWkg1guvtEFMm7" className="underline hover:text-red-700">this</a> form to apply for a scholarship.</p>
+                  <h3 className="text-xl font-semibold mb-2">Step 4: Fill Out Scholarship Form</h3>
+                  <p>This link needs to be updated! Please check back later this year.</p>
+                  <p className="hidden">After submitting your application, fill out <a href="/404" className="underline hover:text-red-700">this</a> form to apply for a scholarship.</p>
                 </div>
               </div>
             </section>

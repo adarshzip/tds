@@ -16,7 +16,7 @@ export default function Footer() {
                     <a href="https://www.instagram.com/usctrojandebate/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-usc-yellow transition">Instagram</a>
                 </div>
             </nav>
-            <p className="px-2 pb-1 text-[7px] text-white text-right">
+            <p className="px-2 pb-1 text-[4px] md:text-[6px] text-white text-right">
                 <Link href={"https://adarsh.zip"} className="hover:text-usc-yellow">Adarsh made this.</Link>
             </p>
         </footer>
