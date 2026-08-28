@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="bg-white">
       {/* Hero Section */}
-      <div className="bg-no-repeat bg-cover bg-center bg-campus1 flex h-screen relative">
+      <div className="bg-no-repeat bg-cover bg-center bg-campus1 flex h-[calc(100vh-3.5rem)] sm:h-[calc(100vh-2.5rem)] relative">
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="relative z-10 flex pt-11 px-8 sm:px-16 flex-col justify-center items-center text-center sm:items-start sm:text-left max-w-3xl">
           <h2 className="text-white font-semibold text-3xl sm:text-4xl md:text-5xl mb-4">

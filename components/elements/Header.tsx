@@ -26,7 +26,7 @@ export default function Header() {
 
     const headerBg = (isHome && atTop) ? 'bg-transparent' : 'bg-usc-red';
     const headerPosition = (isHome && atTop)
-        ? 'absolute top-0 left-0 w-full h-16'
+        ? 'absolute top-14 sm:top-10 left-0 w-full h-16'
         : 'sticky top-0 h-16';
     const transitionClass = isHome ? 'transition-all duration-500' : '';
 

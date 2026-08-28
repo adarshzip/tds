@@ -3,6 +3,7 @@ import { Metadata } from "next";
 const years = new Date().getFullYear() - 1880;
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
+import Banner from "@/components/elements/Banner";
 import Header from "@/components/elements/Header";
 import Footer from "@/components/elements/Footer";
 
@@ -131,6 +132,7 @@ export default function RootLayout({
         }` }} />
       </head>
       <body className="antialiased">
+        <Banner />
         <Header />
         {children}
         <Analytics />
