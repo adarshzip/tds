@@ -137,17 +137,11 @@ export default function Recruiting() {
                 </div>
                 <div className="bg-usc-yellow text-black p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 2: Submit Interest Form</h3>
-                  <p>This link needs to be updated! Please check back later this year.</p>
-                  <p className="hidden">You can fill it out <a href="/404" className="underline hover:text-red-700">here</a>.</p>
+                  <p>You can fill it out <a href="https://forms.gle/gcqFz8nUqYt1DSof7" className="underline hover:text-red-700">here</a>.</p>
                 </div>
                 <div className="bg-usc-red text-white p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 3: Reach Out (Optional)</h3>
-                  <p>Contact a team member or coach to ask any questions you have about the team.</p>
-                </div>
-                <div className="bg-usc-yellow text-black p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Step 4: Fill Out Scholarship Form</h3>
-                  <p>This link needs to be updated! Please check back later this year.</p>
-                  <p className="hidden">After submitting your application, fill out <a href="/404" className="underline hover:text-red-700">this</a> form to apply for a scholarship.</p>
+                  <p>Contact a team member or coach to ask any questions you have about the team. This is coordinated through the interest form above.</p>
                 </div>
               </div>
             </section>
