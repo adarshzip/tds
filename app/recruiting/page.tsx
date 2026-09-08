@@ -133,8 +133,7 @@ export default function Recruiting() {
               <div className="space-y-4">
                 <div className="bg-usc-red text-white p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 1: Read our FAQ Page</h3>
-                  <p>This link needs to be updated! Please check back later this year.</p>
-                  <p className="hidden">You can download it <a href="/404" className="text-white underline hover:text-usc-yellow">here</a>.</p>
+                  <p>You can access it <a href="https://docs.google.com/document/d/1YbvMPslxYxT-HiJvzo1zMC6VjS2ebPxnc8zW_sI38Cc/edit?usp=sharing" className="text-white underline hover:text-usc-yellow">here</a>.</p>
                 </div>
                 <div className="bg-usc-yellow text-black p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Step 2: Submit Interest Form</h3>
